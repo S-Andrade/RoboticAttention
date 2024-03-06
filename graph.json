@@ -1,0 +1,332 @@
+[
+    {
+        "node_1": "SR.GAIA",
+        "node_2": "ASSASSINATO",
+        "edge": "Sr.Gaia é a vitima do assasinato."
+    },
+    {
+        "node_1": "SR.GAIA",
+        "node_2": "OFICINA GAIA",
+        "edge": "Sr.Gaia é o dono da Oficina Gaia."
+    },
+    {
+        "node_1": "MARIA",
+        "node_2": "SR.GAIA",
+        "edge": "Maria é casada com Sr.Gaia."
+    },
+    {
+        "node_1": "MIGUEL",
+        "node_2": "SR.GAIA",
+        "edge": "Miguel é o fornecedor do Sr.Gaia."
+    },
+    {
+        "node_1": "MIGUEL",
+        "node_2": "MAuto",
+        "edge": "Miguel é o dono da MAuto."
+    },
+    {
+        "node_1": "EDUARDO",
+        "node_2": "SR.GAIA",
+        "edge": "Eduardo é o faz-tudo do Sr.Gaia."
+    },
+    {
+        "node_1": "BRUNO",
+        "node_2": "SR.GAIA",
+        "edge": "Bruno é o jardineiro do Sr.Gaia."
+    },
+    {
+        "node_1": "Carla",
+        "node_2": "Café",
+        "edge": "Carla é a funcionaria do Café."
+    },
+    {
+        "node_1": "Sara",
+        "node_2": "EDUARDO",
+        "edge": "Sara é a filha do Eduardo."
+    },
+    {
+        "node_1": "MIGUEL",
+        "node_2": "ASSASSINATO",
+        "edge": "Miguel é suspeito do assassinato."
+    },
+    {
+        "node_1": "EDUARDO",
+        "node_2": "ASSASSINATO",
+        "edge": "Eduardo é suspeito do assassinato."
+    },
+    {
+        "node_1": "BRUNO",
+        "node_2": "ASSASSINATO",
+        "edge": "Bruno é suspeito do assassinato."
+    },
+    {
+        "node_1": "MIGUEL",
+        "node_2": "SR.GAIA",
+        "edge": "enviou peças com defeito"
+    },
+    {
+        "node_1": "MIGUEL",
+        "node_2": "SR.GAIA",
+        "edge": "À cerca de 2 meses antes do crime Miguel começou a enviar peças auto com defeitos."
+    },
+    {
+        "node_1": "SR.GAIA",
+        "node_2": "MIGUEL",
+        "edge": "À cerca de 2 meses antes do crime Miguel e Sr.Gaia rivalidade empresarial começou."
+    },
+    {
+        "node_1": "SR.GAIA",
+        "node_2": "MIGUEL",
+        "edge": "Sr.Gaia enviou uma nota a ameaçar Miguel."
+    },
+    {
+        "node_1": "SR.GAIA",
+        "node_2": "MIGUEL",
+        "edge": "Sr.Gaia recusou a oferta de Miguel."
+    },
+    {
+        "node_1": "Sara",
+        "node_2": "SR.GAIA",
+        "edge": "Sara discutiu com o Sr.Gaia."
+    },
+    {
+        "node_1": "Sara",
+        "node_2": "OFICINA GAIA",
+        "edge": "Sara despediu-se da Oficina Gaia."
+    },
+    {
+        "node_1": "BRUNO",
+        "node_2": "SR.GAIA",
+        "edge": "Por volta das 4h de sexta Bruno foi a casa do Sr.Gaia para pedir dinheiro."
+    },
+    {
+        "node_1": "MARIA",
+        "node_2": "BRUNO",
+        "edge": "Maria confirmou que o Sr.Gaia emprestou dinheiro ao Bruno na sexta à tarde."
+    },
+    {
+        "node_1": "EDUARDO",
+        "node_2": "PÉ-DE-CABRA",
+        "edge": "Eduardo deixou seu pé-de-cabra exposto por várias horas na manhã de sábado."
+    },
+    {
+        "node_1": "BRUNO",
+        "node_2": "BRUNO",
+        "edge": "Bruno ficou doente na manhã de sábado."
+    },
+    {
+        "node_1": "BRUNO",
+        "node_2": "BRUNO",
+        "edge": "Bruno não cortou a relva na manhã de sábado."
+    },
+    {
+        "node_1": "MIGUEL",
+        "node_2": "SR.GAIA",
+        "edge": "Miguel discutiu por telemovel com o Sr.Gaia na manhã de sábado."
+    },
+    {
+        "node_1": "EDUARDO",
+        "node_2": "EDUARDO",
+        "edge": "Às 6h de sábado Eduardo chegou a casa do Sr.Gaia."
+    },
+    {
+        "node_1": "EDUARDO",
+        "node_2": "EDUARDO",
+        "edge": "Às 6h de sábado Eduardo estacionou o seu carro no carport."
+    },
+    {
+        "node_1": "EDUARDO",
+        "node_2": "EDUARDO",
+        "edge": "Às 6h de sábado Eduardo viu a luz do estudio do Sr.Gaia acesa."
+    },
+    {
+        "node_1": "MIGUEL",
+        "node_2": "MIGUEL",
+        "edge": "Por volta das 6h25 de sábado Miguel saiu de casa."
+    },
+    {
+        "node_1": "SR.GAIA",
+        "node_2": "ASSASSINATO",
+        "edge": "O Sr.Gaia morreu entre as 6h30 e as 7h."
+    },
+    {
+        "node_1": "SR.GAIA",
+        "node_2": "PÉ-DE-CABRA",
+        "edge": "O Sr.Gaia foi atingido com um pé-de-cabra."
+    },
+    {
+        "node_1": "SR.GAIA",
+        "node_2": "ASSASSINATO",
+        "edge": "A causa da morte do Sr.Gaia foi a queda."
+    },
+    {
+        "node_1": "MIGUEL",
+        "node_2": "Café",
+        "edge": "Por volta das 6h40 Miguel bebeu café."
+    },
+    {
+        "node_1": "Carla",
+        "node_2": "MIGUEL",
+        "edge": "A Carla confirmou que o Miguel esteve lá entre as 6h30 e as 6h45."
+    },
+    {
+        "node_1": "MARIA",
+        "node_2": "MARIA",
+        "edge": "Às 6h40 Maria ouviu barulhos na rua."
+    },
+    {
+        "node_1": "MARIA",
+        "node_2": "MARIA",
+        "edge": "Às 6h40 Maria ouviu um carro a sair."
+    },
+    {
+        "node_1": "MARIA",
+        "node_2": "MARIA",
+        "edge": "Às 6h40 Maria viu o carro do Sr.Gaia no carport."
+    },
+    {
+        "node_1": "MARIA",
+        "node_2": "MARIA",
+        "edge": "Às 6h40 Maria não viu o carro do Eduardo no carport."
+    },
+    {
+        "node_1": "MIGUEL",
+        "node_2": "Café",
+        "edge": "Por volta das 6h50 Miguel saiu do café."
+    },
+    {
+        "node_1": "MIGUEL",
+        "node_2": "Campo de Golf",
+        "edge": "Às 7h Miguel chegou ao campo de golf."
+    },
+    {
+        "node_1": "Ricardo",
+        "node_2": "MIGUEL",
+        "edge": "Ricardo confirmou que Miguel chegou ao campo de golf às 7h."
+    },
+    {
+        "node_1": "EDUARDO",
+        "node_2": "BRUNO",
+        "edge": "Eduardo disse que ouviu o carro do Bruno às 7h."
+    },
+    {
+        "node_1": "SR.GAIA",
+        "node_2": "CARTEIRA",
+        "edge": "dono"
+    },
+    {
+        "node_1": "CARTEIRA",
+        "node_2": "CARRO",
+        "edge": "Às 7h um carro largou a carteira do Sr.Gaia."
+    },
+    {
+        "node_1": "BRUNO",
+        "node_2": "SR.GAIA",
+        "edge": "Às 8h o Bruno encontrou o corpo e fugiu."
+    },
+    {
+        "node_1": "MARIA",
+        "node_2": "MARIA",
+        "edge": "Por volta das 9h ou 9h15 a Maria acordou."
+    },
+    {
+        "node_1": "MARIA",
+        "node_2": "MARIA",
+        "edge": "Entre as 9h30 e 10h a Maria fez aerobica."
+    },
+    {
+        "node_1": "EDUARDO",
+        "node_2": "SR.GAIA",
+        "edge": "Por volta das 10h30 Eduardo encontrou o corpo."
+    },
+    {
+        "node_1": "BRUNO",
+        "node_2": "BRUNO",
+        "edge": "Bruno tinha um jogo à tarde."
+    },
+    {
+        "node_1": "MIGUEL",
+        "node_2": "MARIA",
+        "edge": "Miguel e a esposa visitaram Maria no Domingo."
+    },
+    {
+        "node_1": "BRUNO",
+        "node_2": "BRUNO",
+        "edge": "Bruno mentiu sobre ter estado na casa do Sr.Gaia na manhã de sábado."
+    },
+    {
+        "node_1": "PÉ-DE-CABRA",
+        "node_2": "PÉ-DE-CABRA",
+        "edge": "O pé-de-cabra foi encontrado nos arbustos."
+    },
+    {
+        "node_1": "PÉ-DE-CABRA",
+        "node_2": "PÉ-DE-CABRA",
+        "edge": "O pé-de-cabra tinha ES gravado."
+    },
+    {
+        "node_1": "PÉ-DE-CABRA",
+        "node_2": "EDUARDO",
+        "edge": "O pé-de-cabra pertence ao Eduardo."
+    },
+    {
+        "node_1": "PÉ-DE-CABRA",
+        "node_2": "BRUNO",
+        "edge": "O pé-de-cabra tinha impressões digitais do Bruno."
+    },
+    {
+        "node_1": "BRUNO",
+        "node_2": "BRUNO",
+        "edge": "Bruno têm problemas com dinheiro e jogo."
+    },
+    {
+        "node_1": "EDUARDO",
+        "node_2": "SR.GAIA",
+        "edge": "Eduardo sabia que o Sr.Gaia saia de casa sempre às 6h30."
+    },
+    {
+        "node_1": "EDUARDO",
+        "node_2": "EDUARDO",
+        "edge": "Eduardo têm problemas de audição."
+    },
+    {
+        "node_1": "CARTEIRA",
+        "node_2": "SR.GAIA",
+        "edge": "O corpo não tinha carteira."
+    },
+    {
+        "node_1": "CARTEIRA",
+        "node_2": "CARTEIRA",
+        "edge": "A carteira foi encontrada sem dinheiro."
+    },
+    {
+        "node_1": "CARTEIRA",
+        "node_2": "POSTO DE GASOLINA",
+        "edge": "A carteira foi encontrada no Posto de gasolina."
+    },
+    {
+        "node_1": "POSTO DE GASOLINA",
+        "node_2": "MIGUEL",
+        "edge": "O posto de gasolina é proximo da rota de Miguel até ao campo de golf."
+    },
+    {
+        "node_1": "BRUNO",
+        "node_2": "BRUNO",
+        "edge": "As marcas de rodas feitas na manhã de sabado são do carro do Bruno."
+    },
+    {
+        "node_1": "EDUARDO",
+        "node_2": "EDUARDO",
+        "edge": "Habitualmente Eduardo tranca as suas ferramentas."
+    },
+    {
+        "node_1": "CARRO",
+        "node_2": "CARTEIRA",
+        "edge": "O carro que largou a carteira era silencioso."
+    },
+    {
+        "node_1": "BRUNO",
+        "node_2": "PÉ-DE-CABRA",
+        "edge": "O Bruno moveu o pé-de-cabra para entrar na garagem."
+    }
+]
