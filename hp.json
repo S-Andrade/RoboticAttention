@@ -3,212 +3,177 @@
         {
             "node_1": "assasinato",
             "node_2": "Sr.Gaia",
-            "edge": "vitima"
+            "edge": "Houve um assasinato."
         },
         {
             "node_1": "assasinato",
             "node_2": "Miguel",
-            "edge": "suspeito"
+            "edge": "Miguel é suspeito do assassinato."
         },
         {
             "node_1": "assasinato",
             "node_2": "Eduardo",
-            "edge": "suspeito"
+            "edge": "Eduardo é suspeito do assassinato."
         },
         {
             "node_1": "assasinato",
             "node_2": "Bruno",
-            "edge": "suspeito"
+            "edge": "Bruno é suspeito do assassinato."
         },
         {
-            "node_1": "Sr.Gaia",
-            "node_2": "Oficina Gaia",
-            "edge": "dono"
-        },
-        {
-            "node_1": "Sr.Gaia",
-            "node_2": "Maria",
-            "edge": "casado"
-        },
-        {
-            "node_1": "Sr.Gaia",
-            "node_2": "Miguel",
-            "edge": "fornecedor"
-        },
-        {
-            "node_1": "Sr.Gaia",
-            "node_2": "Eduardo",
-            "edge": "faz-tudo"
-        },
-        {
-            "node_1": "Sr.Gaia",
-            "node_2": "Bruno",
-            "edge": "jardineiro"
+            "node_1": "Miguel",
+            "node_2": "Sr.Gaia",
+            "edge": "Miguel é o fornecedor do Sr.Gaia."
         },
         {
             "node_1": "Miguel",
             "node_2": "MAuto",
-            "edge": "dono"
+            "edge": "Miguel é o dono da MAuto."
         },
         {
-            "node_1": "Miguel",
-            "node_2": "Sr.Gaia",
-            "edge": "rivalidade empresarial"
+            "node_1": "Sr.Gaia",
+            "node_2": "Oficina Gaia",
+            "edge": "Sr.Gaia é o dono da Oficina Gaia."
         },
         {
-            "node_1": "Miguel",
-            "node_2": "Sr.Gaia",
-            "edge": "ameaça"
+            "node_1": "Sr.Gaia",
+            "node_2": "Maria",
+            "edge": "Maria é casada com Sr.Gaia."
         },
         {
-            "node_1": "Miguel",
-            "node_2": "Sr.Gaia",
-            "edge": "recusa de oferta"
+            "node_1": "Sr.Gaia",
+            "node_2": "Eduardo",
+            "edge": "Eduardo é o faz-tudo do Sr.Gaia."
         },
         {
-            "node_1": "Miguel",
-            "node_2": "Sr.Gaia",
-            "edge": "discussão"
+            "node_1": "Sr.Gaia",
+            "node_2": "Bruno",
+            "edge": "Bruno é o jardineiro do Sr.Gaia."
         },
         {
-            "node_1": "Miguel",
-            "node_2": "Café",
-            "edge": "presença"
+            "node_1": "Café",
+            "node_2": "Carla",
+            "edge": "Carla é a funcionaria do Café."
         },
         {
             "node_1": "Eduardo",
             "node_2": "Sara",
-            "edge": "pai"
+            "edge": "Sara é a filha do Eduardo."
         },
         {
             "node_1": "Bruno",
             "node_2": "Sr.Gaia",
-            "edge": "pedido de dinheiro"
+            "edge": "Por volta das 4h de sexta Bruno foi a casa do Sr.Gaia para pedir dinheiro."
         },
         {
-            "node_1": "Bruno",
-            "node_2": "doente",
-            "edge": "na manhã de sábado"
+            "node_1": "Sr.Gaia",
+            "node_2": "Miguel",
+            "edge": "À cerca de 2 meses antes do crime Miguel e Sr.Gaia rivalidade empresarial começou."
         },
         {
-            "node_1": "Bruno",
-            "node_2": "suspeito",
-            "edge": "assasinato"
+            "node_1": "Sr.Gaia",
+            "node_2": "Miguel",
+            "edge": "Sr.Gaia enviou uma nota a ameaçar Miguel."
         },
         {
-            "node_1": "Eduardo",
-            "node_2": "pé-de-cabra",
-            "edge": "exposição"
+            "node_1": "Sr.Gaia",
+            "node_2": "Miguel",
+            "edge": "Sr.Gaia recusou a oferta de Miguel."
         },
         {
-            "node_1": "Eduardo",
+            "node_1": "Sara",
             "node_2": "Sr.Gaia",
-            "edge": "saída de casa"
-        },
-        {
-            "node_1": "Eduardo",
-            "node_2": "corpo",
-            "edge": "encontro"
+            "edge": "Sara discutiu com o Sr.Gaia."
         },
         {
             "node_1": "Sara",
             "node_2": "Oficina Gaia",
-            "edge": "despedida"
-        },
-        {
-            "node_1": "Maria",
-            "node_2": "Sr.Gaia",
-            "edge": "confirmação de empréstimo"
-        },
-        {
-            "node_1": "Maria",
-            "node_2": "barulhos",
-            "edge": "ouvir na rua"
-        },
-        {
-            "node_1": "Maria",
-            "node_2": "carro",
-            "edge": "sair"
-        },
-        {
-            "node_1": "Maria",
-            "node_2": "carro",
-            "edge": "ver no carport"
-        },
-        {
-            "node_1": "Maria",
-            "node_2": "clientes",
-            "edge": "gostar"
-        },
-        {
-            "node_1": "Maria",
-            "node_2": "acordar",
-            "edge": "hora"
-        },
-        {
-            "node_1": "Maria",
-            "node_2": "aerobica",
-            "edge": "prática"
-        },
-        {
-            "node_1": "Ricardo",
-            "node_2": "Miguel",
-            "edge": "confirmação de chegada"
+            "edge": "Sara despediu-se da Oficina Gaia."
         },
         {
             "node_1": "Bruno",
-            "node_2": "corpo",
-            "edge": "encontro e fuga"
+            "node_2": "Eduardo",
+            "edge": "Bruno não cortou a relva na manhã de sábado."
         },
         {
-            "node_1": "pé-de-cabra",
-            "node_2": "arbustos",
-            "edge": "encontrado"
+            "node_1": "Eduardo",
+            "node_2": "Bruno",
+            "edge": "Eduardo deixou seu pé-de-cabra exposto por várias horas na manhã de sábado."
+        },
+        {
+            "node_1": "Eduardo",
+            "node_2": "Bruno",
+            "edge": "O Bruno moveu o pé-de-cabra para entrar na garagem."
+        },
+        {
+            "node_1": "Eduardo",
+            "node_2": "Maria",
+            "edge": "Às 6h40 Maria ouviu barulhos na rua."
+        },
+        {
+            "node_1": "Eduardo",
+            "node_2": "Maria",
+            "edge": "Às 6h40 Maria ouviu um carro a sair."
+        },
+        {
+            "node_1": "Eduardo",
+            "node_2": "Maria",
+            "edge": "Às 6h40 Maria viu o carro do Sr.Gaia no carport."
+        },
+        {
+            "node_1": "Eduardo",
+            "node_2": "Maria",
+            "edge": "Às 6h40 Maria não viu o carro do Eduardo no carport."
+        },
+        {
+            "node_1": "Miguel",
+            "node_2": "Carla",
+            "edge": "Às 6h40 Miguel bebeu café."
+        },
+        {
+            "node_1": "Miguel",
+            "node_2": "Carla",
+            "edge": "A Carla confirmou que o Miguel esteve lá entre as 6h30 e as 6h45."
+        },
+        {
+            "node_1": "Miguel",
+            "node_2": "Campo de Golf",
+            "edge": "Às 7h Miguel chegou ao campo de golf."
+        },
+        {
+            "node_1": "Campo de Golf",
+            "node_2": "Ricardo",
+            "edge": "Ricardo confirmou que Miguel chegou ao campo de golf às 7h."
+        },
+        {
+            "node_1": "Eduardo",
+            "node_2": "Bruno",
+            "edge": "O carro que largou a carteira era silencioso."
+        },
+        {
+            "node_1": "Bruno",
+            "node_2": "Posto",
+            "edge": "A carteira foi encontrada no Posto de gasolina."
+        },
+        {
+            "node_1": "Posto",
+            "node_2": "Miguel",
+            "edge": "O posto de gasolina é proximo da rota de Miguel até ao campo de golf."
+        },
+        {
+            "node_1": "Bruno",
+            "node_2": "pé-de-cabra",
+            "edge": "O pé-de-cabra foi encontrado nos arbustos."
         },
         {
             "node_1": "pé-de-cabra",
             "node_2": "Eduardo",
-            "edge": "propriedade"
+            "edge": "O pé-de-cabra pertence ao Eduardo."
         },
         {
             "node_1": "pé-de-cabra",
-            "node_2": "impressões digitais",
-            "edge": "do Bruno"
-        },
-        {
-            "node_1": "carteira",
-            "node_2": "Sr.Gaia",
-            "edge": "pertencimento"
-        },
-        {
-            "node_1": "carteira",
-            "node_2": "Posto de gasolina",
-            "edge": "encontrada"
-        },
-        {
-            "node_1": "Posto de gasolina",
-            "node_2": "rota",
-            "edge": "proximidade"
-        },
-        {
-            "node_1": "marcas de rodas",
-            "node_2": "carro",
-            "edge": "identificação"
-        },
-        {
-            "node_1": "Eduardo",
-            "node_2": "ferramentas",
-            "edge": "trancamento"
-        },
-        {
-            "node_1": "carro",
-            "node_2": "silencioso",
-            "edge": "característica"
-        },
-        {
-            "node_1": "Bruno",
-            "node_2": "garagem",
-            "edge": "entrada"
+            "node_2": "Bruno",
+            "edge": "O pé-de-cabra tinha impressões digitais do Bruno."
         }
     ]
 }

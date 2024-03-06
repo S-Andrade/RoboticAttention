@@ -33,7 +33,7 @@ for line in lines:
 file.close()
 
 
-prompt_3 = f"""
+prompt_2 = f"""
 You are a network graph maker who extracts the relations between terms from a given context.
 You are provided with a context chunk (delimited by ```).
 Your task is to extract the ontology of terms mentioned in the given context.
@@ -43,10 +43,31 @@ Format your output as a json. Each element contains a pair of terms and the rela
 Interviews: ```{pistas}```
 """
 
-#response = get_completion(prompt_3)
+prompt_3 = f"""
+You are a network graph maker who extracts the relations between terms from a given context.
+You are provided with a context chunk (delimited by ```).
+Your task is to extract the ontology of terms mentioned in the given context.
+These terms are Bruno, sábado, assasinato, Miguel, Ricardo, Campo de Golf, MAuto, Café, Empregada Café, Sr.Gaia, pé-de-cabra, Eduardo, Sara, Oficina Gaia, clientes, carteira, posto, Maria. Do not add more terms!
+Knowing this list of terms, for each sentence you must find the two terms that are mentioned there. Then think about the relationship that the sentence suggests that these two terms have.
+Format your output as a json. Each element contains a pair of terms and the relation between them. With  node_1, node_2 and edge as keys.
+Interviews: ```{pistas}```
+"""
 
-#with open("hp.json", "w") as outfile:
-#    outfile.write(response)
+prompt_4 = f"""
+You are a network graph maker who extracts the relations between terms from a given context.
+You are provided with a context chunk (delimited by ```).
+Your task is to extract the ontology of terms mentioned in the given context.
+These terms are Bruno, sábado, assasinato, Miguel, Ricardo, Campo de Golf, MAuto, Café, Empregada Café, Sr.Gaia, pé-de-cabra, Eduardo, Sara, Oficina Gaia, clientes, carteira, posto, Maria. Do not add more terms!
+Knowing this list of terms, for each sentence you must find the two terms that are mentioned there. 
+Format your output as a json. Each element contains a pair of terms and the sentence . With  node_1, node_2 and edge as keys
+Interviews: ```{pistas}```
+"""
+
+
+response = get_completion(prompt_4)
+
+with open("hp.json", "w") as outfile:
+    outfile.write(response)
 
 
 with open('hp.json') as f:

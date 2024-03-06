@@ -35,12 +35,12 @@
         "edge": "Bruno é o jardineiro do Sr.Gaia."
     },
     {
-        "node_1": "Carla",
-        "node_2": "Café",
+        "node_1": "CARLA",
+        "node_2": "CAFÉ",
         "edge": "Carla é a funcionaria do Café."
     },
     {
-        "node_1": "Sara",
+        "node_1": "SARA",
         "node_2": "EDUARDO",
         "edge": "Sara é a filha do Eduardo."
     },
@@ -85,12 +85,12 @@
         "edge": "Sr.Gaia recusou a oferta de Miguel."
     },
     {
-        "node_1": "Sara",
+        "node_1": "SARA",
         "node_2": "SR.GAIA",
         "edge": "Sara discutiu com o Sr.Gaia."
     },
     {
-        "node_1": "Sara",
+        "node_1": "SARA",
         "node_2": "OFICINA GAIA",
         "edge": "Sara despediu-se da Oficina Gaia."
     },
@@ -161,11 +161,11 @@
     },
     {
         "node_1": "MIGUEL",
-        "node_2": "Café",
+        "node_2": "CAFÉ",
         "edge": "Por volta das 6h40 Miguel bebeu café."
     },
     {
-        "node_1": "Carla",
+        "node_1": "CARLA",
         "node_2": "MIGUEL",
         "edge": "A Carla confirmou que o Miguel esteve lá entre as 6h30 e as 6h45."
     },
@@ -191,7 +191,7 @@
     },
     {
         "node_1": "MIGUEL",
-        "node_2": "Café",
+        "node_2": "CAFÉ",
         "edge": "Por volta das 6h50 Miguel saiu do café."
     },
     {

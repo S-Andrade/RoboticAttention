@@ -1,6 +1,12 @@
 # -*- coding: utf-8 -*-
 import json
 import openai 
+import time
+import sys
+
+RED = "\033[0;31m"
+GREEN = "\033[0;32m"
+YELLOW = "\033[0;33m"
   
 def load_api_key(secrets_file="secrectsChatGPT.json"):
     with open(secrets_file) as f:
@@ -41,24 +47,61 @@ with open('graph.json', encoding="utf8") as f:
 nodes = ['SR.GAIA', 'ASSASINATO', 'OFICINA GAIA', 'MARIA', 'MIGUEL', 'MAUTO', 'EDUARDO', 'BRUNO', 'CARLA', 'CAFÉ', 'SARA', 'PÉ-DE-CABRA', 'CAMPO DE GOLF', 'RICARDO', 'CARTEIRA', 'CARRO', 'POSTO DE GASOLINA']
 
 
+chat = False
 messages = []
 
-while True: 
-    message = input("User : ") 
-    res = [ele for ele in nodes if(ele in message.upper())]
+if chat:
+    
+    while True: 
+        message = input("User : ") 
+        res = [ele for ele in nodes if(ele in message.upper())]
 
-    if len(res) == 0:
-        messages += [{"role": "user", "content": message}]
-        response = chatGPT(messages)
-        print(response)
+        if len(res) == 0:
+            messages += [{"role": "user", "content": message}]
+            response = chatGPT(messages)
+            print(response)
 
-    else:
-        pistas = ""
-        for d in data:
-            if d['node_1']in res or d['node_2']in res:
-                pistas += d['edge']
+        else:
+            pistas = ""
+            for d in data:
+                if d['node_1']in res or d['node_2']in res:
+                    pistas += d['edge']
 
-        messages = [{"role": "user", "content": getPrompt(pistas)},
-                    {"role": "user", "content": message}]
-        response = chatGPT(messages)
-        print(response)
+            messages = [{"role": "user", "content": getPrompt(pistas)},
+                        {"role": "user", "content": message}]
+            response = chatGPT(messages)
+            print(response)
+else:
+    
+    file = open(".\perguntas.txt", encoding="utf8")
+    lines =  file.readlines()
+    i = 0
+    for line in lines:
+        if i == 3:
+            time.sleep(60)
+            i = 0
+        
+        sys.stdout.write(RED)
+        print("Q: "+line)
+
+        res = [ele for ele in nodes if(ele in line.upper())]
+        if len(res) == 0:
+            messages += [{"role": "user", "content": line}]
+            response = chatGPT(messages)
+            
+
+        else:
+            pistas = ""
+            for d in data:
+                if d['node_1']in res or d['node_2']in res:
+                    pistas += d['edge']
+
+            messages = [{"role": "user", "content": getPrompt(pistas)},
+                        {"role": "user", "content": line}]
+            response = chatGPT(messages)
+         
+        sys.stdout.write(GREEN)
+        print("A: "+response + "\n")        
+        i+=1
+
+    file.close()
