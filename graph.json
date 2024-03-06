@@ -196,11 +196,11 @@
     },
     {
         "node_1": "MIGUEL",
-        "node_2": "Campo de Golf",
+        "node_2": "CAMPO DE GOLF",
         "edge": "Às 7h Miguel chegou ao campo de golf."
     },
     {
-        "node_1": "Ricardo",
+        "node_1": "RICARDO",
         "node_2": "MIGUEL",
         "edge": "Ricardo confirmou que Miguel chegou ao campo de golf às 7h."
     },

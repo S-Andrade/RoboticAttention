@@ -40,6 +40,22 @@ def chatGPT(messages, model="gpt-3.5-turbo"):
     )
     return response.choices[0].message["content"]
 
+def getBigNode():
+    dic = {}
+    for d in data:
+        if d['node_1'] in dic.keys():
+            dic[d['node_1']] += 1
+        else:
+            dic[d['node_1']] = 1
+        
+        if d['node_2'] in dic.keys():
+            dic[d['node_2']] += 1
+        else:
+            dic[d['node_2']] = 1
+
+    max_value = max(dic, key=dic.get)
+    return max_value
+
 
 with open('graph.json', encoding="utf8") as f:
     data = json.load(f)
@@ -56,7 +72,19 @@ if chat:
         message = input("User : ") 
         res = [ele for ele in nodes if(ele in message.upper())]
 
-        if len(res) == 0:
+        if len(res) == 0  and messages == []:
+            bignode = getBigNode()
+            pistas = ""
+            for d in data:
+                if d['node_1'] == bignode or d['node_2'] == bignode:
+                    pistas += d['edge']
+
+            messages = [{"role": "user", "content": getPrompt(pistas)},
+                        {"role": "user", "content": message}]
+            response = chatGPT(messages)
+            print(response)
+
+        elif len(res) == 0:
             messages += [{"role": "user", "content": message}]
             response = chatGPT(messages)
             print(response)
@@ -85,7 +113,20 @@ else:
         print("Q: "+line)
 
         res = [ele for ele in nodes if(ele in line.upper())]
-        if len(res) == 0:
+
+        if len(res) == 0  and messages == []:
+            bignode = getBigNode()
+            pistas = ""
+            for d in data:
+                if d['node_1'] == bignode or d['node_2'] == bignode:
+                    pistas += d['edge']
+
+            messages = [{"role": "user", "content": getPrompt(pistas)},
+                        {"role": "user", "content": line}]
+            response = chatGPT(messages)
+            
+
+        elif len(res) == 0:
             messages += [{"role": "user", "content": line}]
             response = chatGPT(messages)
             
