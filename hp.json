@@ -1,0 +1,214 @@
+{
+    "data": [
+        {
+            "node_1": "assasinato",
+            "node_2": "Sr.Gaia",
+            "edge": "vitima"
+        },
+        {
+            "node_1": "assasinato",
+            "node_2": "Miguel",
+            "edge": "suspeito"
+        },
+        {
+            "node_1": "assasinato",
+            "node_2": "Eduardo",
+            "edge": "suspeito"
+        },
+        {
+            "node_1": "assasinato",
+            "node_2": "Bruno",
+            "edge": "suspeito"
+        },
+        {
+            "node_1": "Sr.Gaia",
+            "node_2": "Oficina Gaia",
+            "edge": "dono"
+        },
+        {
+            "node_1": "Sr.Gaia",
+            "node_2": "Maria",
+            "edge": "casado"
+        },
+        {
+            "node_1": "Sr.Gaia",
+            "node_2": "Miguel",
+            "edge": "fornecedor"
+        },
+        {
+            "node_1": "Sr.Gaia",
+            "node_2": "Eduardo",
+            "edge": "faz-tudo"
+        },
+        {
+            "node_1": "Sr.Gaia",
+            "node_2": "Bruno",
+            "edge": "jardineiro"
+        },
+        {
+            "node_1": "Miguel",
+            "node_2": "MAuto",
+            "edge": "dono"
+        },
+        {
+            "node_1": "Miguel",
+            "node_2": "Sr.Gaia",
+            "edge": "rivalidade empresarial"
+        },
+        {
+            "node_1": "Miguel",
+            "node_2": "Sr.Gaia",
+            "edge": "ameaça"
+        },
+        {
+            "node_1": "Miguel",
+            "node_2": "Sr.Gaia",
+            "edge": "recusa de oferta"
+        },
+        {
+            "node_1": "Miguel",
+            "node_2": "Sr.Gaia",
+            "edge": "discussão"
+        },
+        {
+            "node_1": "Miguel",
+            "node_2": "Café",
+            "edge": "presença"
+        },
+        {
+            "node_1": "Eduardo",
+            "node_2": "Sara",
+            "edge": "pai"
+        },
+        {
+            "node_1": "Bruno",
+            "node_2": "Sr.Gaia",
+            "edge": "pedido de dinheiro"
+        },
+        {
+            "node_1": "Bruno",
+            "node_2": "doente",
+            "edge": "na manhã de sábado"
+        },
+        {
+            "node_1": "Bruno",
+            "node_2": "suspeito",
+            "edge": "assasinato"
+        },
+        {
+            "node_1": "Eduardo",
+            "node_2": "pé-de-cabra",
+            "edge": "exposição"
+        },
+        {
+            "node_1": "Eduardo",
+            "node_2": "Sr.Gaia",
+            "edge": "saída de casa"
+        },
+        {
+            "node_1": "Eduardo",
+            "node_2": "corpo",
+            "edge": "encontro"
+        },
+        {
+            "node_1": "Sara",
+            "node_2": "Oficina Gaia",
+            "edge": "despedida"
+        },
+        {
+            "node_1": "Maria",
+            "node_2": "Sr.Gaia",
+            "edge": "confirmação de empréstimo"
+        },
+        {
+            "node_1": "Maria",
+            "node_2": "barulhos",
+            "edge": "ouvir na rua"
+        },
+        {
+            "node_1": "Maria",
+            "node_2": "carro",
+            "edge": "sair"
+        },
+        {
+            "node_1": "Maria",
+            "node_2": "carro",
+            "edge": "ver no carport"
+        },
+        {
+            "node_1": "Maria",
+            "node_2": "clientes",
+            "edge": "gostar"
+        },
+        {
+            "node_1": "Maria",
+            "node_2": "acordar",
+            "edge": "hora"
+        },
+        {
+            "node_1": "Maria",
+            "node_2": "aerobica",
+            "edge": "prática"
+        },
+        {
+            "node_1": "Ricardo",
+            "node_2": "Miguel",
+            "edge": "confirmação de chegada"
+        },
+        {
+            "node_1": "Bruno",
+            "node_2": "corpo",
+            "edge": "encontro e fuga"
+        },
+        {
+            "node_1": "pé-de-cabra",
+            "node_2": "arbustos",
+            "edge": "encontrado"
+        },
+        {
+            "node_1": "pé-de-cabra",
+            "node_2": "Eduardo",
+            "edge": "propriedade"
+        },
+        {
+            "node_1": "pé-de-cabra",
+            "node_2": "impressões digitais",
+            "edge": "do Bruno"
+        },
+        {
+            "node_1": "carteira",
+            "node_2": "Sr.Gaia",
+            "edge": "pertencimento"
+        },
+        {
+            "node_1": "carteira",
+            "node_2": "Posto de gasolina",
+            "edge": "encontrada"
+        },
+        {
+            "node_1": "Posto de gasolina",
+            "node_2": "rota",
+            "edge": "proximidade"
+        },
+        {
+            "node_1": "marcas de rodas",
+            "node_2": "carro",
+            "edge": "identificação"
+        },
+        {
+            "node_1": "Eduardo",
+            "node_2": "ferramentas",
+            "edge": "trancamento"
+        },
+        {
+            "node_1": "carro",
+            "node_2": "silencioso",
+            "edge": "característica"
+        },
+        {
+            "node_1": "Bruno",
+            "node_2": "garagem",
+            "edge": "entrada"
+        }
+    ]
+}
