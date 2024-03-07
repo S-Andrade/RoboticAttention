@@ -2,6 +2,8 @@
 import json
 import networkx as nx
 from pyvis.network import Network
+import matplotlib.pyplot as plt
+
 
 with open('graph.json', encoding="utf8") as f:
     data = json.load(f)
@@ -29,7 +31,7 @@ for d in data:
         str(d["node_1"]),
         str(d["node_2"]),
         title=d["edge"],
-        label=d["edge"]
+        #label=d["edge"]
     )
 
 
@@ -37,6 +39,6 @@ for d in data:
 g =Network(height=900, width=1500, notebook=True, directed=True)
 g.toggle_hide_edges_on_drag(True)
 g.from_nx(G)
-g.show_buttons()
+#g.show_buttons()
 g.set_edge_smooth('dynamic')
 g.show("graph.html")

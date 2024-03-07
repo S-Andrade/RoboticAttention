@@ -64,7 +64,7 @@ Interviews: ```{pistas}```
 """
 
 
-response = get_completion(prompt_4)
+response = get_completion(prompt_2)
 
 with open("hp.json", "w") as outfile:
     outfile.write(response)
