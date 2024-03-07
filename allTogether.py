@@ -101,13 +101,13 @@ while True:
             pistas += d['edge']
     
     if question == "False":
-        print("hello")
+        
         messages = [{"role": "user", "content": getPromptNew(message,pistas)}]
         response = chatGPT(messages)
         l= response.split(', ')
         anwser = re.sub("('|,|\(|\))","",l[0])
         clue = re.sub("('|,|\(|\))","",l[1])
-        print(anwser)
+        
         if anwser == "Não":
             if clue[-1] != ".":
                 clue = clue + "."
@@ -121,6 +121,8 @@ while True:
             data.append(di)
             with open("pistas.json", "w") as outfile:
                 json.dump(data, outfile)
+        
+        print("Ok")
 
     if question == "True":   
         if len(res) == 0  and messages == []:
