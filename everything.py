@@ -274,7 +274,7 @@ def main() -> None:
     api_key = load_api_key()
     openai.api_key = api_key
 
-    with open('pistas.json', encoding="utf8") as f:
+    with open('graph.json', encoding="utf8") as f:
         data = json.load(f)
 
     nodes = ['SR.GAIA', 'ASSASINATO', 'OFICINA GAIA', 'MARIA', 'MIGUEL', 'MAUTO', 'EDUARDO', 'BRUNO', 'CARLA', 'CAFÉ', 'SARA', 'PÉ-DE-CABRA', 'CAMPO DE GOLF', 'RICARDO', 'CARTEIRA', 'CARRO', 'POSTO DE GASOLINA']
@@ -294,6 +294,8 @@ def main() -> None:
             voice = v.id
 
     engine.setProperty('voice', voice)
+
+    messages = []
 
     with mic_manager as stream:
         while not stream.closed:
@@ -316,8 +318,8 @@ def main() -> None:
                 if r.results[0].alternatives[0].transcript and r.results[0].is_final:
 
                     message = r.results[0].alternatives[0].transcript
-                    messages = [{"role": "user", "content": getPromptQuestion(message)}]
-                    question = chatGPT(messages)
+                    m1 = [{"role": "user", "content": getPromptQuestion(message)}]
+                    question = chatGPT(m1)
 
                     res = [ele for ele in nodes if(ele in message.upper())]
                     pistas = ""
@@ -329,8 +331,8 @@ def main() -> None:
 
                     if question == "False":
                         
-                        messages = [{"role": "user", "content": getPromptNew(message,pistas)}]
-                        response = chatGPT(messages)
+                        m2 = [{"role": "user", "content": getPromptNew(message,pistas)}]
+                        response = chatGPT(m2)
                         l= response.split(', ')
                         anwser = re.sub("('|,|\(|\))","",l[0])
                         clue = re.sub("('|,|\(|\))","",l[1])
@@ -353,7 +355,7 @@ def main() -> None:
 
                     if question == "True":   
                         if len(res) == 0  and messages == []:
-                            bignode = getBigNode()
+                            bignode = getBigNode(data)
                             pistas = ""
                             for d in data:
                                 if d['node_1'] == bignode or d['node_2'] == bignode:

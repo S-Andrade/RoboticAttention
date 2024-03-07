@@ -84,26 +84,25 @@ with open('pistas.json', encoding="utf8") as f:
 
 nodes = ['SR.GAIA', 'ASSASINATO', 'OFICINA GAIA', 'MARIA', 'MIGUEL', 'MAUTO', 'EDUARDO', 'BRUNO', 'CARLA', 'CAFÉ', 'SARA', 'PÉ-DE-CABRA', 'CAMPO DE GOLF', 'RICARDO', 'CARTEIRA', 'CARRO', 'POSTO DE GASOLINA']
 
-
- 
-
+messages = []
 
 while True:
     message = input("User : ") 
 
-    messages = [{"role": "user", "content": getPromptQuestion(message)}]
-    question = chatGPT(messages)
-
+    m1 = [{"role": "user", "content": getPromptQuestion(message)}]
+    question = chatGPT(m1)
+    
     res = [ele for ele in nodes if(ele in message.upper())]
     pistas = ""
     for d in data:
         if d['node_1']in res or d['node_2']in res:
             pistas += d['edge']
     
+    
     if question == "False":
         
-        messages = [{"role": "user", "content": getPromptNew(message,pistas)}]
-        response = chatGPT(messages)
+        m2 = [{"role": "user", "content": getPromptNew(message,pistas)}]
+        response = chatGPT(m2)
         l= response.split(', ')
         anwser = re.sub("('|,|\(|\))","",l[0])
         clue = re.sub("('|,|\(|\))","",l[1])
@@ -119,10 +118,10 @@ while True:
             di['node_2'] = res[1]
             di['edge'] = clue
             data.append(di)
-            with open("pistas.json", "w") as outfile:
+            with open("pistas_2.json", "w") as outfile:
                 json.dump(data, outfile)
         
-        print("Ok")
+        response = "Ok"
 
     if question == "True":   
         if len(res) == 0  and messages == []:
@@ -140,7 +139,7 @@ while True:
         elif len(res) == 0:
             messages += [{"role": "user", "content": message}]
             response = chatGPT(messages)
-            print(response)
+            
 
         else:
             pistas = ""
@@ -151,4 +150,5 @@ while True:
             messages = [{"role": "user", "content": getPrompt(pistas)},
                         {"role": "user", "content": message}]
             response = chatGPT(messages)
-            print(response)
+        
+    print(response)
