@@ -62,7 +62,7 @@
     {
         "node_1": "MIGUEL",
         "node_2": "SR.GAIA",
-        "edge": "enviou peças com defeito"
+        "edge": "Miguel enviou peças com defeito ao Sr.Gaia."
     },
     {
         "node_1": "MIGUEL",
@@ -212,7 +212,7 @@
     {
         "node_1": "SR.GAIA",
         "node_2": "CARTEIRA",
-        "edge": "dono"
+        "edge": "O Sr.Gaia é o dono da carteira."
     },
     {
         "node_1": "CARTEIRA",
