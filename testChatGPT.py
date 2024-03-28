@@ -38,6 +38,7 @@ def chatGPT(messages, model="gpt-3.5-turbo"):
         messages=messages,
         temperature=0, # this is the degree of randomness of the model's output
     )
+    print(response)
     return response.choices[0].message["content"]
 
 def getBigNode():
@@ -62,6 +63,7 @@ with open('graph.json', encoding="utf8") as f:
 
 nodes = ['SR.GAIA', 'ASSASINATO', 'OFICINA GAIA', 'MARIA', 'MIGUEL', 'MAUTO', 'EDUARDO', 'BRUNO', 'CARLA', 'CAFÉ', 'SARA', 'PÉ-DE-CABRA', 'CAMPO DE GOLF', 'RICARDO', 'CARTEIRA', 'CARRO', 'POSTO DE GASOLINA']
 
+historico = {'user': [], 'robot': []}
 
 chat = True
 messages = []
@@ -70,6 +72,7 @@ if chat:
     
     while True: 
         message = input("User : ") 
+        historico['user'] += [message]
         res = [ele for ele in nodes if(ele in message.upper())]
 
         if len(res) == 0  and messages == []:
@@ -82,12 +85,12 @@ if chat:
             messages = [{"role": "user", "content": getPrompt(pistas)},
                         {"role": "user", "content": message}]
             response = chatGPT(messages)
-            print(response)
+            
 
         elif len(res) == 0:
             messages += [{"role": "user", "content": message}]
             response = chatGPT(messages)
-            print(response)
+            
 
         else:
             pistas = ""
@@ -98,7 +101,17 @@ if chat:
             messages = [{"role": "user", "content": getPrompt(pistas)},
                         {"role": "user", "content": message}]
             response = chatGPT(messages)
-            print(response)
+            
+        r = response 
+        if any(x in response for x in historico['robot']):   
+            r = "Como eu já disse, " + response
+        if any(x in response for x in historico['user']):
+            r = "Como já disses-te, " + response
+        
+        
+        historico['robot'] += [response]
+        print(r)
+
 else:
     
     file = open(".\perguntas.txt", encoding="utf8")
@@ -111,7 +124,7 @@ else:
         
         sys.stdout.write(RED)
         print("Q: "+line)
-
+        historico['user'] += [line]
         res = [ele for ele in nodes if(ele in line.upper())]
 
         if len(res) == 0  and messages == []:
@@ -141,8 +154,23 @@ else:
                         {"role": "user", "content": line}]
             response = chatGPT(messages)
          
+        r = response    
+        if response in historico['robot']:
+            r = "Como eu já disse, " + response
+        if response in historico['user']:
+            r = "Como já disses-te, " + response
+        
+        
+        r = response 
+        if any(x in response for x in historico['robot']):   
+            r = "Como eu já disse, " + response
+        if any(x in response for x in historico['user']):
+            r = "Como já disses-te, " + response
+                
+        historico['robot'] += [response]
+
         sys.stdout.write(GREEN)
-        print("A: "+response + "\n")        
+        print("A: "+r + "\n")        
         i+=1
 
     file.close()

@@ -1,0 +1,327 @@
+[
+    {
+        "node_1": "SR.GAIA",
+        "node_2": "ASSASSINATO",
+        "edge": "vitima"
+    },
+    {
+        "node_1": "SR.GAIA",
+        "node_2": "OFICINA GAIA",
+        "edge": "dono"
+    },
+    {
+        "node_1": "MARIA",
+        "node_2": "SR.GAIA",
+        "edge": "casados"
+    },
+    {
+        "node_1": "MIGUEL",
+        "node_2": "SR.GAIA",
+        "edge": "fornecedor"
+    },
+    {
+        "node_1": "MIGUEL",
+        "node_2": "MAuto",
+        "edge": "dono"
+    },
+    {
+        "node_1": "EDUARDO",
+        "node_2": "SR.GAIA",
+        "edge": "faz-tudo"
+    },
+    {
+        "node_1": "BRUNO",
+        "node_2": "SR.GAIA",
+        "edge": "jardineiro"
+    },
+    {
+        "node_1": "CARLA",
+        "node_2": "CAFÉ",
+        "edge": "funcionaria"
+    },
+    {
+        "node_1": "SARA",
+        "node_2": "EDUARDO",
+        "edge": "filha"
+    },
+    {
+        "node_1": "MIGUEL",
+        "node_2": "ASSASSINATO",
+        "edge": "suspeito"
+    },
+    {
+        "node_1": "EDUARDO",
+        "node_2": "ASSASSINATO",
+        "edge": "suspeito"
+    },
+    {
+        "node_1": "BRUNO",
+        "node_2": "ASSASSINATO",
+        "edge": "suspeito"
+    },
+    {
+        "node_1": "MIGUEL",
+        "node_2": "SR.GAIA",
+        "edge": "enviou peças com defeito"
+    },
+    {
+        "node_1": "SR.GAIA",
+        "node_2": "MIGUEL",
+        "edge": "rivalidade empresarial"
+    },
+    {
+        "node_1": "SR.GAIA",
+        "node_2": "MIGUEL",
+        "edge": "enviou uma nota a ameaçar"
+    },
+    {
+        "node_1": "SR.GAIA",
+        "node_2": "MIGUEL",
+        "edge": "recusou a oferta"
+    },
+    {
+        "node_1": "SARA",
+        "node_2": "SR.GAIA",
+        "edge": "discução"
+    },
+    {
+        "node_1": "SARA",
+        "node_2": "OFICINA GAIA",
+        "edge": "despediu-se"
+    },
+    {
+        "node_1": "BRUNO",
+        "node_2": "SR.GAIA",
+        "edge": "pediu dinheiro"
+    },
+    {
+        "node_1": "MARIA",
+        "node_2": "BRUNO",
+        "edge": "confirmou emprestimo"
+    },
+    {
+        "node_1": "EDUARDO",
+        "node_2": "PÉ-DE-CABRA",
+        "edge": "deixou exposto"
+    },
+    {
+        "node_1": "BRUNO",
+        "node_2": "BRUNO",
+        "edge": "doente"
+    },
+    {
+        "node_1": "BRUNO",
+        "node_2": "BRUNO",
+        "edge": "não cortou a relva"
+    },
+    {
+        "node_1": "MIGUEL",
+        "node_2": "SR.GAIA",
+        "edge": "discução por telemovel"
+    },
+    {
+        "node_1": "EDUARDO",
+        "node_2": "EDUARDO",
+        "edge": "chegou às 6h"
+    },
+    {
+        "node_1": "EDUARDO",
+        "node_2": "EDUARDO",
+        "edge": "estacionou no telheiro"
+    },
+    {
+        "node_1": "EDUARDO",
+        "node_2": "EDUARDO",
+        "edge": "viu luz no estudio"
+    },
+    {
+        "node_1": "MIGUEL",
+        "node_2": "MIGUEL",
+        "edge": "saiu de casa às 6h25"
+    },
+    {
+        "node_1": "SR.GAIA",
+        "node_2": "ASSASSINATO",
+        "edge": "morreu entre as 6h30 e as 7h."
+    },
+    {
+        "node_1": "SR.GAIA",
+        "node_2": "PÉ-DE-CABRA",
+        "edge": "atingido"
+    },
+    {
+        "node_1": "SR.GAIA",
+        "node_2": "ASSASSINATO",
+        "edge": "causa foi a queda"
+    },
+    {
+        "node_1": "MIGUEL",
+        "node_2": "CAFÉ",
+        "edge": "6h40 bebeu café"
+    },
+    {
+        "node_1": "CARLA",
+        "node_2": "MIGUEL",
+        "edge": "confirmou que esteve lá entre as 6h30 e as 6h45"
+    },
+    {
+        "node_1": "MARIA",
+        "node_2": "MARIA",
+        "edge": "ouviu barulhos na rua às 6h40"
+    },
+    {
+        "node_1": "MARIA",
+        "node_2": "MARIA",
+        "edge": "ouviu um carro a sair às 6h40"
+    },
+    {
+        "node_1": "MARIA",
+        "node_2": "MARIA",
+        "edge": "viu o carro do Sr.Gaia no telheiro às 6h40"
+    },
+    {
+        "node_1": "MARIA",
+        "node_2": "MARIA",
+        "edge": "não viu o carro do Eduardo no telheiro às 6h40"
+    },
+    {
+        "node_1": "MIGUEL",
+        "node_2": "CAFÉ",
+        "edge": "6h50 saiu do café."
+    },
+    {
+        "node_1": "MIGUEL",
+        "node_2": "CAMPO DE GOLF",
+        "edge": "chegou às 7h"
+    },
+    {
+        "node_1": "RICARDO",
+        "node_2": "MIGUEL",
+        "edge": "confirmou chegada"
+    },
+    {
+        "node_1": "EDUARDO",
+        "node_2": "BRUNO",
+        "edge": "ouviu o carro às 7h."
+    },
+    {
+        "node_1": "SR.GAIA",
+        "node_2": "CARTEIRA",
+        "edge": "dono"
+    },
+    {
+        "node_1": "CARTEIRA",
+        "node_2": "CARRO",
+        "edge": "largou a carteira às 7h"
+    },
+    {
+        "node_1": "BRUNO",
+        "node_2": "SR.GAIA",
+        "edge": "encontrou o corpo e fugiu às 8h"
+    },
+    {
+        "node_1": "MARIA",
+        "node_2": "MARIA",
+        "edge": "Por volta das 9h ou 9h15 acordou."
+    },
+    {
+        "node_1": "MARIA",
+        "node_2": "MARIA",
+        "edge": "Entre as 9h30 e 10h fez aerobica."
+    },
+    {
+        "node_1": "EDUARDO",
+        "node_2": "SR.GAIA",
+        "edge": "Por volta das 10h30 encontrou o corpo."
+    },
+    {
+        "node_1": "BRUNO",
+        "node_2": "BRUNO",
+        "edge": "jogo à tarde."
+    },
+    {
+        "node_1": "MIGUEL",
+        "node_2": "MARIA",
+        "edge": "visitou no Domingo"
+    },
+    {
+        "node_1": "BRUNO",
+        "node_2": "BRUNO",
+        "edge": "mentiu sobre ter estado na casa na manhã de sábado"
+    },
+    {
+        "node_1": "PÉ-DE-CABRA",
+        "node_2": "PÉ-DE-CABRA",
+        "edge": "encontrado nos arbustos"
+    },
+    {
+        "node_1": "PÉ-DE-CABRA",
+        "node_2": "PÉ-DE-CABRA",
+        "edge": "ES gravado"
+    },
+    {
+        "node_1": "PÉ-DE-CABRA",
+        "node_2": "EDUARDO",
+        "edge": "pertence"
+    },
+    {
+        "node_1": "PÉ-DE-CABRA",
+        "node_2": "BRUNO",
+        "edge": "impressões digitais"
+    },
+    {
+        "node_1": "BRUNO",
+        "node_2": "BRUNO",
+        "edge": "problemas com dinheiro e jogo"
+    },
+    {
+        "node_1": "EDUARDO",
+        "node_2": "SR.GAIA",
+        "edge": "sabia que saia de casa sempre às 6h30"
+    },
+    {
+        "node_1": "EDUARDO",
+        "node_2": "EDUARDO",
+        "edge": "problemas de audição"
+    },
+    {
+        "node_1": "SR.GAIA",
+        "node_2": "CARTEIRA",
+        "edge": "corpo não tinha"
+    },
+    {
+        "node_1": "CARTEIRA",
+        "node_2": "CARTEIRA",
+        "edge": "encontrada sem dinheiro"
+    },
+    {
+        "node_1": "CARTEIRA",
+        "node_2": "POSTO DE GASOLINA",
+        "edge": "encontrada"
+    },
+    {
+        "node_1": "POSTO DE GASOLINA",
+        "node_2": "MIGUEL",
+        "edge": "proximo da rota"
+    },
+    {
+        "node_1": "BRUNO",
+        "node_2": "BRUNO",
+        "edge": "marcas de rodas feitas na manhã de sabado"
+    },
+    {
+        "node_1": "EDUARDO",
+        "node_2": "EDUARDO",
+        "edge": "tranca as suas ferramentas"
+    },
+    {
+        "node_1": "CARRO",
+        "node_2": "CARTEIRA",
+        "edge": "silencioso"
+    },
+    {
+        "node_1": "BRUNO",
+        "node_2": "PÉ-DE-CABRA",
+        "edge": "moveu para entrar na garagem"
+    }
+]

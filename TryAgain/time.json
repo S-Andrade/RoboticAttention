@@ -1,0 +1,2001 @@
+{
+    "nodes":{
+      "Pessoa":[
+        {
+          "_uid": "p1",
+          "nome": "Roberto",
+          "sobrenome": "Gaia",
+          "profissao": "Empresário"
+        },
+        {
+            "_uid": "p2",
+            "nome": "Maria",
+            "sobrenome": "Gaia"
+        },
+        {
+            "_uid": "p3",
+            "nome": "Eduardo",
+            "sobrenome": "Silva",
+            "profissao": "Faz-tudo"
+        },
+        {
+            "_uid": "p4",
+            "nome": "Bruno",
+            "sobrenome": "Pereira",
+            "profissao": "Jardineiro"
+        },
+        {
+            "_uid": "p5",
+            "nome": "Miguel",
+            "sobrenome": "Matos",
+            "profissao": "Empresário"
+        },
+        {
+            "_uid": "p6",
+            "nome": "Simão",
+            "sobrenome": "Nogueira",
+            "profissao": "Gestor de peças"
+        },
+        {
+            "_uid": "p7",
+            "nome": "Duarte",
+            "sobrenome": "Dias",
+            "profissao": "Empresário"
+        },
+        {
+            "_uid": "p8",
+            "nome": "Sara",
+            "sobrenome": "Silva",
+            "profissao": "Contabilista"
+        },
+        {
+            "_uid": "p8",
+            "nome": "Carla",
+            "sobrenome": "Castro"
+        }
+      ],
+      "Negocio": [
+        {
+            "_uid": "n1",
+            "nome": "AutoGaia"
+        },
+        {
+            "_uid": "n2",
+            "nome": "MMAuto"
+        },
+        {
+            "_uid": "n3",
+            "nome": "Loja Dias"
+        },
+        {
+            "_uid": "n4",
+            "nome": "Café"
+        },
+        {
+            "_uid": "n5",
+            "nome": "Clube LX"
+        }
+      ],
+      "Sitio":[
+        {
+            "_uid": "s1",
+            "nome": "Casa do Sr.Gaia"
+        },
+        {
+            "_uid": "s2",
+            "nome": "Telheiro"
+        },
+        {
+            "_uid": "s3",
+            "nome": "Escadas"
+        },
+        {
+            "_uid": "s4",
+            "nome": "Arbustos"
+        }
+      ],
+      "Evento": [
+        {
+            "_uid": "e1",
+            "nome": "Assasinato",
+            "Quando":"entre as 6:30 e as 7h da manhã de sábado",
+            "Quem": "Sr.Gaia",
+            "Onde": "Casa do Sr.Gaia",
+            "Oque": "morreu",
+            "Como": "atengido com um pé-de-cabra seguido por uma queda por um lance de escadas"
+        },
+        {
+            "_uid": "e2",
+            "nome": "peças com defeito",
+            "Quando":"2 meses antes",
+            "Quem": "Miguel",
+            "Onde": "MMAuto e AutoGaia",
+            "Oque": "MMAuto enviou peças com defeito à AutoGaia"
+        },
+        {
+            "_uid": "e3",
+            "nome": "Rivalidade empresarial",
+            "Quando":"2 meses antes",
+            "Quem": "Miguel e Sr.Gaia",
+            "Onde": "MMAuto e AutoGaia",
+            "Oque": "começou rivalidade",
+            "Porque":"MMAuto enviou peças com defeito à AutoGaia"
+        },
+        {
+            "_uid": "e4",
+            "nome": "Ameaça",
+            "Quando":"1 semana antes",
+            "Quem": "Sr.Gaia e Miguel",
+            "Oque": "Sr.Gaia enviou nota com ameaça a Miguel",
+            "Porque":"envio de peças com defeito"
+        },
+        {
+            "_uid": "e5",
+            "nome": "Oferta",
+            "Quando":"1 semana antes",
+            "Quem": "Miguel e Sr.Gaia",
+            "Oque": "Miguel fez uma oferta ao Sr.Gaia mas ele recusou",
+            "Porque":"Para resolver a rivalidade",
+            "Como": "Ofereceu melhores condições"
+        },
+        {
+            "_uid": "e6",
+            "nome": "Pedir dinheiro",
+            "Quando":"Sexta às 4h da tarde",
+            "Quem": "Bruno",
+            "Onde": "Casa do Sr.Gaia",
+            "Oque": "pediu dinheiro ao Sr.Gaia",
+            "Porque":"problemas com jogo e dinheiro"
+        },
+        {
+            "_uid": "e7",
+            "nome": "exposto por varias horas",
+            "Quando":"na manhã de sábado",
+            "Quem": "Eduardo",
+            "Onde": "Casa do Sr.Gaia",
+            "Oque": "pé-de-cabra"
+        },
+        {
+            "_uid":"e8",
+            "nome": "doente",
+            "Quando":"manhã de sábado",
+            "Quem": "Bruno",
+            "Oque": "Bruno ficou doente"
+        },
+        {
+            "_uid":"e9",
+            "nome": "cortar relva",
+            "Quando":"manhã de sábado",
+            "Quem": "Bruno",
+            "Onde": "Casa do Sr.Gaia",
+            "Oque": "não cortou a relva",
+            "Porque":"estava doente"
+        },
+        {
+            "_uid":"e10",
+            "nome": "discução",
+            "Quando":"manhã de sábado",
+            "Quem": "Miguel e Sr.Gaia",
+            "Onde": "por telemovel",
+            "Oque": "discutiram",
+            "Porque":"por causa da sua rivalidade"
+        },
+        {
+            "_uid":"e11",
+            "nome": "chegar",
+            "Quando":"6h da manhã de sábado",
+            "Quem": "Eduardo",
+            "Onde": "Casa do Sr.Gaia",
+            "Oque": "chegou a casa do Sr.Gaia",
+            "Porque":"para trabalhar",
+            "Como":"carro do Eduardo"
+        },
+        {
+            "_uid":"e12",
+            "nome": "estacionar",
+            "Quando":"6h da manhã de sábado",
+            "Quem": "Eduardo",
+            "Onde": "Telheiro",
+            "Oque": "estacionou",
+            "Porque":"para trabalhar"
+        },
+        {
+            "_uid":"e13",
+            "nome": "luz do estudio",
+            "Quando":"6h da manhã de sábado",
+            "Quem": "Eduardo",
+            "Onde": "Casa do Sr.Gaia",
+            "Oque": "viu a luz do estudio acesa",
+            "Porque":"o Sr.Gaia estava lá"
+        },
+        {
+            "_uid":"e14",
+            "nome": "casa do miguel",
+            "Quando":"6h25 da manhã de sábado",
+            "Quem": "Miguel",
+            "Onde": "Casa do Miguel",
+            "Oque": "saiu",
+            "Porque":"para ir falar com o Sr.Gaia",
+            "Como":"no Carro do Miguel"
+        },
+        {
+            "_uid":"e15",
+            "nome": "atengido",
+            "Quando":"entre as 6:30 e as 7h da manhã de sábado",
+            "Quem": "Sr.Gaia",
+            "Onde": "Casa do Sr.Gaia",
+            "Oque": "foi atengido na cabeça",
+            "Como":"com um pé-de-cabra"
+        },
+        {
+            "_uid":"e16",
+            "nome": "queda",
+            "Quando":"entre as 6:30 e as 7h da manhã de sábado",
+            "Quem": "Sr.Gaia",
+            "Onde": "Escadas nas traseiras da Casa do Sr.Gaia",
+            "Oque": "caiu",
+            "Porque":"doi atengido na cabeça"
+        },
+        {
+            "_uid":"e17",
+            "nome": "beber café",
+            "Quando":"6h40 da manhã de sábado",
+            "Quem": "Miguel",
+            "Onde": "Café",
+            "Oque": "bebeu café",
+            "Porque":"Para pensar"
+        },
+        {
+            "_uid":"e18",
+            "nome": "barulhos na rua",
+            "Quando":"6h40 da manhã de sábado",
+            "Quem": "Maria",
+            "Onde": "Casa do Sr.Gaia",
+            "Oque": "ouviu barulhos na rua"
+        },
+        {
+            "_uid":"e19",
+            "nome": "carro a sair",
+            "Quando":"6h40 da manhã de sábado",
+            "Quem": "Maria",
+            "Onde": "Casa do Sr.Gaia",
+            "Oque": "ouviu um carro a sair"
+        },
+        {
+            "_uid":"e20",
+            "nome": "carro",
+            "Quando":"6h40 da manhã de sábado",
+            "Quem": "Maria",
+            "Onde": "telheiro",
+            "Oque": "viu o carro do Sr.Gaia",
+            "Como":"pela janela do escritorio"
+        },
+        {
+            "_uid":"e21",
+            "nome": "Café",
+            "Quando":"6h50 da manhã de sábado",
+            "Quem": "Miguel",
+            "Onde": "Café",
+            "Oque": "saiu do café",
+            "Porque":"acabou de beber café",
+            "Como":"de carro"
+        },
+        {
+            "_uid":"e22",
+            "nome": "golf",
+            "Quando":"7h da manhã de sábado",
+            "Quem": "Miguel",
+            "Onde": "Clube LX",
+            "Oque": "chegou ao campo de golf",
+            "Porque": "tinha combinado com os amigos",
+            "Como":"no carro do Miguel"
+        },
+        {
+            "_uid":"e23",
+            "nome": "carro barulhento",
+            "Quando":"7h da manhã de sábado",
+            "Quem": "Eduardo",
+            "Onde": "Casa do Sr.Gaia",
+            "Oque": "ouviu o carro do Bruno",
+            "Porque":"o carro do Bruno é barulhento"
+        },
+        {
+            "_uid":"e24",
+            "nome": "carteira",
+            "Quando":"7h da manhã de sábado",
+            "Onde": "Loja Gaia",
+            "Quem": "O culpado no seu carro",
+            "Oque": "carteira do Sr.Gaia"
+        },
+        {
+            "_uid":"e25",
+            "nome": "encontar o corpo",
+            "Quando":"8h da manhã de sábado",
+            "Quem": "Bruno",
+            "Onde": "Casa do Sr.Gaia",
+            "Oque": "encontrou o corpo",
+            "Porque":"foi cortar a relva"
+        },
+        {
+            "_uid":"e26",
+            "nome": "fugir da cena do crime",
+            "Quando":"8h da manhã de sábado",
+            "Quem": "Bruno",
+            "Onde": "Casa do Sr.Gaia",
+            "Oque": "fugiu da cena do crime",
+            "Porque": "achou que seria o melhor para ele",
+            "Como": "no Carro do Bruno"
+        },
+        {
+            "_uid":"e27",
+            "nome": "encontrar o corpo",
+            "Quando":"10h30 na manhã de sábado",
+            "Quem": "Eduardo",
+            "Onde": "Casa do Sr.Gaia",
+            "Oque": "encontrou o corpo",
+            "Porque": "foi ao seu carro buscar o pé-de-cabra ao seu carro"
+        },
+        {
+            "_uid":"e28",
+            "nome": "acordar",
+            "Quando":"entre as 9h e 9h15 da manhã de sábado",
+            "Quem": "Maria",
+            "Onde": "Casa do Sr.Gaia",
+            "Oque": "Acordou",
+            "Porque": "dorme até tarde ao fim de semana"
+        },
+        {
+            "_uid":"e29",
+            "nome": "fazer aerobica",
+            "Quando":"entre as 9h30 e 10h da manha de sábado",
+            "Quem": "Maria",
+            "Onde": "Casa do Sr.Gaia",
+            "Oque": "fez aerobica",
+            "Porque": "passa um programa na tv",
+            "Como": "atravez do progama da tv"
+        },
+        {
+            "_uid":"e30",
+            "nome": "jogo de futebol",
+            "Quando":"tarde de sábado",
+            "Quem": "Bruno",
+            "Oque": "tinha um jogo de futebol"
+        },
+        {
+            "_uid":"e31",
+            "nome": "visitar",
+            "Quando":"domingo",
+            "Quem": "Miguel e sua esposa",
+            "Onde": "Casa do Sr.Gaia",
+            "Oque": "foram visitar Maria",
+            "Porque": "morte do Sr.Gaia"
+        },
+        {
+            "_uid":"e32",
+            "nome": "mentira",
+            "Quando":"primeira entrevista",
+            "Quem": "Bruno",
+            "Onde": "primeira entrevista",
+            "Oque": "mentiu sobre ter estado na casa do Sr.Gaia na manhã de sábado",
+            "Porque": "acreditou que era o  melhor para si"
+        },
+        {
+            "_uid":"e33",
+            "nome": "encontrar",
+            "Quando":"durante a investigação",
+            "Quem": "pé-de-cabra",
+            "Onde": "nos arbustos",
+            "Oque": "foi encontrado"
+        },
+        {
+            "_uid":"e34",
+            "nome": "encontar",
+            "Quem": "Carteira do Sr.Gaia",
+            "Onde": "nas traseiras da Loja Dias",
+            "Oque": "foi encontrada",
+            "Porque": "alguem deixou lá",
+            "Como": "num carro"
+        },
+        {
+            "_uid":"e35",
+            "nome": "Marcas de rodas",
+            "Quando":"manhã de sábado",
+            "Quem": "Bruno",
+            "Onde": "Casa do Sr.Gaia",
+            "Oque": "marcas de rodas foram feitas",
+            "Porque": "porque ele foi lá na manhã de sábado",
+            "Como": "Carro do bruno"
+        },
+        {
+            "_uid":"e36",
+            "nome": "trancar ferramentas",
+            "Quando":"habitualmente",
+            "Quem": "Eduardo",
+            "Oque": "tranca as suas ferramentas"
+        },
+        {
+            "_uid":"e37",
+            "nome": "Despedir-se",
+            "Quem": "Sara",
+            "Onde": "AutoGaia",
+            "Oque": "despediu-se do negocio do Sr.Gaia"
+        },
+        {
+            "_uid":"e38",
+            "nome": "Trabalhar no celeiro",
+            "Quando":"manhã de sábado",
+            "Quem": "Eduardo",
+            "Onde": "Casa do Sr.Gaia",
+            "Oque": "Eduardo trabalhou no celeirio",
+            "Porque": "é o faz-tudo"
+        },
+        {
+            "_uid":"e39",
+            "nome": "carteira encontrada",
+            "Quem": "Duarte Dias",
+            "Onde": "Loja Dias",
+            "Oque": "carteira do Sr.Gaia",
+            "Porque": "foi largada por um carro"
+        },
+        {
+            "_uid":"e38",
+            "nome": "crime",
+            "Quando":"manhã de sábado",
+            "Onde": "Casa do Sr.Gaia",
+            "Oque": "O Sr.Gaia foi assassinado"
+        }
+
+      ],
+      "Facto":[
+        {
+            "_uid":"f1",
+            "nome": "ES gravado" 
+        },
+        {
+            "_uid":"f2",
+            "nome": "Impressões digitais"
+        },
+        {
+            "_uid":"f3",
+            "nome": "Problemas com Dinheiro e jogo"
+        },
+        {
+            "_uid":"f4",
+            "nome": "Sr.Gaia saia de casa sempre às 6h30"
+        },
+        {
+            "_uid":"f5",
+            "nome": "sem dinheiro"
+        },
+        {
+            "_uid":"f6",
+            "nome": "Rota para o campo golf"
+        }
+      ],
+      "Objeto":[
+        {
+            "_uid": "o1",
+            "nome": "Pé-de-cabra"
+        },
+        {
+            "_uid": "o2",
+            "nome": "Carteira"
+        },
+        {
+            "_uid": "o3",
+            "nome": "Carro do culpado"
+        },
+        {
+            "_uid": "o4",
+            "nome": "Carro do Eduardo"
+        },
+        {
+            "_uid": "o5",
+            "nome": "Carro do Miguel"
+        },
+        {
+            "_uid": "o6",
+            "nome": "Carro do Sr.Gaia"
+        },
+        {
+            "_uid": "o7",
+            "nome": "Carro do Bruno"
+        }
+      ]
+    },
+    "relationships":{
+        "SUSPEITO":[
+            {
+              "_from_uid": "p3",
+              "_to_uid": "e1"
+            },
+            {
+                "_from_uid": "p4",
+                "_to_uid": "e1"
+            },
+            {
+                "_from_uid": "p5",
+                "_to_uid": "e1"
+            }
+        ],
+        "DONO":[
+            {
+                "_from_uid": "p1",
+                "_to_uid": "n1"
+            },
+            {
+                "_from_uid": "p5",
+                "_to_uid": "n2"
+            },
+            {
+                "_from_uid": "p7",
+                "_to_uid": "n3"
+            },
+            {
+                "_from_uid": "p1",
+                "_to_uid": "o2"
+            },
+            {
+                "_from_uid": "p1",
+                "_to_uid": "s1"
+            },
+            {
+                "_from_uid": "p3",
+                "_to_uid": "o1"
+            },
+            {
+                "_from_uid": "e23",
+                "_to_uid": "o7"
+            },
+            {
+                "_from_uid": "p3",
+                "_to_uid": "o4"
+            },
+            {
+                "_from_uid": "p5",
+                "_to_uid": "o5"
+            },
+            {
+                "_from_uid": "p1",
+                "_to_uid": "o6"
+            },
+            {
+                "_from_uid": "p4",
+                "_to_uid": "o7"
+            }
+        ],
+        "CASADO_COM":[
+            {
+                "_from_uid": "p1",
+                "_to_uid": "p2"
+            }
+        ],
+        "TRABALHA_PARA":[
+            {
+                "_from_uid": "p3",
+                "_to_uid": "p1"
+            },
+            {
+                "_from_uid": "p4",
+                "_to_uid": "p1"
+            }
+        ],
+        "TRABALHA":[
+            {
+                "_from_uid": "p6",
+                "_to_uid": "n1"
+            }
+        ],
+        "FORNECEDOR":[
+            {
+                "_from_uid": "p5",
+                "_to_uid": "p1"
+            }
+        ],
+        "FILHA":[
+            {
+                "_from_uid": "p8",
+                "_to_uid": "p3"
+            }
+        ], 
+        "VITIMA":[
+            {
+              "_from_uid": "p1",
+              "_to_uid": "e1"
+            },
+            {
+                "_from_uid": "p1",
+                "_to_uid": "e16"
+            }
+        ],
+        "LOCAL":[
+            {
+                "_from_uid": "e1",
+                "_to_uid": "s1"
+            },
+            {
+                "_from_uid": "e6",
+                "_to_uid": "s1"
+            },
+            {
+                "_from_uid": "e7",
+                "_to_uid": "s1"
+            },
+            {
+                "_from_uid": "e9",
+                "_to_uid": "s1"
+            },
+            {
+                "_from_uid": "e11",
+                "_to_uid": "s1"
+            },
+            {
+                "_from_uid": "e12",
+                "_to_uid": "s2"
+            },
+            {
+                "_from_uid": "e13",
+                "_to_uid": "s1"
+            },
+            {
+                "_from_uid": "e15",
+                "_to_uid": "s1"
+            },
+            {
+                "_from_uid": "e16",
+                "_to_uid": "s3"
+            },
+            {
+                "_from_uid": "e17",
+                "_to_uid": "n4"
+            },
+            {
+                "_from_uid": "e18",
+                "_to_uid": "s1"
+            },
+            {
+                "_from_uid": "e19",
+                "_to_uid": "s1"
+            },
+            {
+                "_from_uid": "e20",
+                "_to_uid": "s2"
+            },
+            {
+                "_from_uid": "e21",
+                "_to_uid": "n4"
+            },
+            {
+                "_from_uid": "e22",
+                "_to_uid": "n5"
+            },
+            {
+                "_from_uid": "e23",
+                "_to_uid": "s1"
+            },
+            {
+                "_from_uid": "e24",
+                "_to_uid": "n3"
+            },
+            {
+                "_from_uid": "e25",
+                "_to_uid": "s1"
+            },
+            {
+                "_from_uid": "e26",
+                "_to_uid": "s1"
+            },
+            {
+                "_from_uid": "e27",
+                "_to_uid": "s1"
+            },
+            {
+                "_from_uid": "e28",
+                "_to_uid": "s1"
+            },
+            {
+                "_from_uid": "e29",
+                "_to_uid": "s1"
+            },
+            {
+                "_from_uid": "e31",
+                "_to_uid": "s1"
+            },
+            {
+                "_from_uid": "e33",
+                "_to_uid": "s4"
+            },
+            {
+                "_from_uid": "e34",
+                "_to_uid": "n3"
+            },
+            {
+                "_from_uid": "e35",
+                "_to_uid": "s1"
+            },
+            {
+                "_from_uid": "e37",
+                "_to_uid": "n1"
+            },
+            {
+                "_from_uid": "e38",
+                "_to_uid": "s1"
+            },
+            {
+                "_from_uid": "e39",
+                "_to_uid": "n3"
+            }
+        ],
+        "ARMA_DO_CRIME":[
+            {
+                "_from_uid": "e1",
+                "_to_uid": "o1"
+            }
+        ],
+        "ATO_CRIMINOSO":[
+            {
+                "_from_uid": "e1",
+                "_to_uid": "e15"
+            }
+        ],
+        "CAUSA":[
+            {
+                "_from_uid": "e1",
+                "_to_uid": "e16"
+            }, 
+            {
+                "_from_uid": "e9",
+                "_to_uid": "e8"
+            },
+            {
+                "_from_uid": "e10",
+                "_to_uid": "e3"
+            }
+        ],
+        "ENVIOU":[
+            {
+                "_from_uid": "p5",
+                "_to_uid": "e2"
+            },
+            {
+                "_from_uid": "n2",
+                "_to_uid": "e2"
+            },
+            {
+                "_from_uid": "p1",
+                "_to_uid": "e4"
+            }
+        ],
+        "RECEBEU":[
+            {
+                "_from_uid": "p1",
+                "_to_uid": "e2"
+            },
+            {
+                "_from_uid": "n1",
+                "_to_uid": "e2"
+            },
+            {
+                "_from_uid": "p5",
+                "_to_uid": "e4"
+            }
+        ],
+        "TEM":[
+            {
+                "_from_uid": "p5",
+                "_to_uid": "e3"
+            },
+            {
+                "_from_uid": "p1",
+                "_to_uid": "e3"
+            },
+            {
+                "_from_uid": "n1",
+                "_to_uid": "e3"
+            },
+            {
+                "_from_uid": "n2",
+                "_to_uid": "e3"
+            },
+            {
+                "_from_uid": "p4",
+                "_to_uid": "e30"
+            },
+            {
+                "_from_uid": "p4",
+                "_to_uid": "f3"
+            }
+        ],
+        "FEZ":[
+            {
+                "_from_uid": "p5",
+                "_to_uid": "e5"
+            },
+            {
+                "_from_uid": "p2",
+                "_to_uid": "e29"
+            },
+            {
+                "_from_uid": "p4",
+                "_to_uid": "e35"
+            },
+            {
+                "_from_uid": "p5",
+                "_to_uid": "f6"
+            }
+        ],
+        "RECUSOU":[
+            {
+                "_from_uid": "p1",
+                "_to_uid": "e5"
+            }
+        ],
+        "TENTATIVA_RESOLVER":[
+            {
+                "_from_uid": "e3",
+                "_to_uid": "e5"
+            }
+        ],
+        "FEZ_PEDIDO":[
+            {
+                "_from_uid": "p4",
+                "_to_uid": "e6"
+            }
+        ],
+        "RECEBEU_PEDIDO":[
+            {
+                "_from_uid": "p1",
+                "_to_uid": "e6"
+            }
+        ],
+        "DEIXOU":[
+            {
+                "_from_uid": "p3",
+                "_to_uid": "e7"
+            }
+        ],
+        "FICOU":[
+            {
+                "_from_uid": "o1",
+                "_to_uid": "e7"
+            },
+            {
+                "_from_uid": "p4",
+                "_to_uid": "e8"
+            }
+        
+        ],
+        "NÃO":[
+            {
+                "_from_uid": "p4",
+                "_to_uid": "e9"
+            }
+        ],
+        "ENTRE":[
+            {
+                "_from_uid": "e10",
+                "_to_uid": "p1"
+            },
+            {
+                "_from_uid": "e10",
+                "_to_uid": "p5"
+            }
+        ],
+        "CHEGOU":[
+            {
+                "_from_uid": "p3",
+                "_to_uid": "e11"
+            },
+            {
+                "_from_uid": "p5",
+                "_to_uid": "e22"
+            }
+        ],
+        "USOU":[
+            {
+                "_from_uid": "e11",
+                "_to_uid": "o4"
+            },
+            {
+                "_from_uid": "e14",
+                "_to_uid": "o5"
+            },
+            {
+                "_from_uid": "e21",
+                "_to_uid": "o5"
+            },
+            {
+                "_from_uid": "e22",
+                "_to_uid": "o5"
+            },
+            {
+                "_from_uid": "e26",
+                "_to_uid": "o7"
+            },
+            {
+                "_from_uid": "e34",
+                "_to_uid": "o3"
+            },
+            {
+                "_from_uid": "e35",
+                "_to_uid": "o7"
+            }
+        ],
+        "PARA":[
+            {
+                "_from_uid": "e11",
+                "_to_uid": "e34"
+            },
+            {
+                "_from_uid": "e12",
+                "_to_uid": "e34"
+            }
+        ],       
+        "ESTACIONOU":[
+            {
+                "_from_uid": "p3",
+                "_to_uid": "e12"
+            }
+        ],
+        "VIU":[
+            {
+                "_from_uid": "p3",
+                "_to_uid": "e13"
+            },
+            {
+                "_from_uid": "p2",
+                "_to_uid": "e20"
+            }
+        ],
+        "SAIU":[
+            {
+                "_from_uid": "p5",
+                "_to_uid": "e14"
+            },
+            {
+                "_from_uid": "p5",
+                "_to_uid": "e21"
+            }
+        ],
+        "FOI":[
+            {
+                "_from_uid": "p1",
+                "_to_uid": "e15"
+            },
+            {
+                "_from_uid": "p5",
+                "_to_uid": "e17"
+            }
+        ],
+        "POR":[
+            {
+                "_from_uid": "e15",
+                "_to_uid": "o1"
+            },
+            {
+                "_from_uid": "e39",
+                "_to_uid": "p7"
+            }
+        ],
+        "OUVIU":[
+            {
+                "_from_uid": "p2",
+                "_to_uid": "e18"
+            },
+            {
+                "_from_uid": "p2",
+                "_to_uid": "e19"
+            },
+            {
+                "_from_uid": "p3",
+                "_to_uid": "e23"
+            }
+        ],
+        "LARGOU":[
+            {
+                "_from_uid": "o3",
+                "_to_uid": "e24"
+            }
+        ],
+        "É":[
+            {
+                "_from_uid": "e24",
+                "_to_uid": "o2"
+            },
+            {
+                "_from_uid": "e39",
+                "_to_uid": "o2"
+            }
+        ],
+        "ENCONTROU":[
+            {
+                "_from_uid": "p4",
+                "_to_uid": "e25"
+            },
+            {
+                "_from_uid": "p3",
+                "_to_uid": "e27"
+            }
+        ],
+        "PERTENCE":[
+            {
+                "_from_uid": "e25",
+                "_to_uid": "p1"
+            },
+            {
+                "_from_uid": "f2",
+                "_to_uid": "p4"
+            }
+        ],
+        "FUGIU":[
+            {
+                "_from_uid": "p4",
+                "_to_uid": "e26"
+            }
+        ],
+        "ACORDOU":[
+            {
+                "_from_uid": "p2",
+                "_to_uid": "e28"
+            }
+        ],
+        "VISITOU":[
+            {
+                "_from_uid": "p5",
+                "_to_uid": "e31"
+            }
+        ],
+        "RECEBEU_VISITA":[
+            {
+                "_from_uid": "e31",
+                "_to_uid": "p2"
+            }
+        ],
+        "MENTIU":[
+            {
+                "_from_uid": "p4",
+                "_to_uid": "e32"
+            }
+        ],
+        "ENCONTRADO":[
+            {
+                "_from_uid": "o1",
+                "_to_uid": "e33"
+            },
+            {
+                "_from_uid": "o2",
+                "_to_uid": "e34"
+            }
+        ],
+        "TRANCA":[
+            {
+                "_from_uid": "p3",
+                "_to_uid": "e36"
+            }
+        ],
+        "DESPEDIUSE":[
+            {
+                "_from_uid": "p8",
+                "_to_uid": "e37"
+            }
+        ],
+        "TRABALHOU":[
+            {
+                "_from_uid": "p3",
+                "_to_uid": "e38"
+            }
+        ],
+        "ANTES":[
+            {
+                "_from_uid": "e2",
+                "_to_uid": "e4"
+            },
+            {
+                "_from_uid": "e2",
+                "_to_uid": "e5"
+            },
+            {
+                "_from_uid": "e3",
+                "_to_uid": "e4"
+            },
+            {
+                "_from_uid": "e3",
+                "_to_uid": "e5"
+            },
+            {
+                "_from_uid": "e4",
+                "_to_uid": "e6"
+            },
+            {
+                "_from_uid": "e5",
+                "_to_uid": "e6"
+            },
+            {
+                "_from_uid": "e6",
+                "_to_uid": "e11"
+            },
+            {
+                "_from_uid": "e6",
+                "_to_uid": "e12"
+            },
+            {
+                "_from_uid": "e6",
+                "_to_uid": "e13"
+            },
+            {
+                "_from_uid": "e6",
+                "_to_uid": "e7"
+            },
+            {
+                "_from_uid": "e6",
+                "_to_uid": "e8"
+            },
+            {
+                "_from_uid": "e6",
+                "_to_uid": "e9"
+            },
+            {
+                "_from_uid": "e6",
+                "_to_uid": "e10"
+            },
+            {
+                "_from_uid": "e6",
+                "_to_uid": "e35"
+            },
+            {
+                "_from_uid": "e6",
+                "_to_uid": "e38"
+            },
+            {
+                "_from_uid": "e11",
+                "_to_uid": "e14"
+            },
+            {
+                "_from_uid": "e12",
+                "_to_uid": "e14"
+            },
+            {
+                "_from_uid": "e13",
+                "_to_uid": "e14"
+            },
+            {
+                "_from_uid": "e14",
+                "_to_uid": "e17"
+            },
+            {
+                "_from_uid": "e14",
+                "_to_uid": "e18"
+            },
+            {
+                "_from_uid": "e14",
+                "_to_uid": "e19"
+            },
+            {
+                "_from_uid": "e14",
+                "_to_uid": "e20"
+            },
+            {
+                "_from_uid": "e14",
+                "_to_uid": "e1"
+            },
+            {
+                "_from_uid": "e14",
+                "_to_uid": "e15"
+            },
+            {
+                "_from_uid": "e14",
+                "_to_uid": "e16"
+            },
+            {
+                "_from_uid": "e17",
+                "_to_uid": "e21"
+            },
+            {
+                "_from_uid": "e18",
+                "_to_uid": "e21"
+            },
+            {
+                "_from_uid": "e19",
+                "_to_uid": "e21"
+            },
+            {
+                "_from_uid": "e20",
+                "_to_uid": "e21"
+            },
+            {
+                "_from_uid": "e21",
+                "_to_uid": "e22"
+            },
+            {
+                "_from_uid": "e21",
+                "_to_uid": "e23"
+            },
+            {
+                "_from_uid": "e21",
+                "_to_uid": "e24"
+            },
+            {
+                "_from_uid": "e22",
+                "_to_uid": "e25"
+            },
+            {
+                "_from_uid": "e22",
+                "_to_uid": "e26"
+            },
+            {
+                "_from_uid": "e23",
+                "_to_uid": "e25"
+            },
+            {
+                "_from_uid": "e23",
+                "_to_uid": "e26"
+            },
+            {
+                "_from_uid": "e24",
+                "_to_uid": "e25"
+            },
+            {
+                "_from_uid": "e24",
+                "_to_uid": "e26"
+            },
+            {
+                "_from_uid": "e1",
+                "_to_uid": "e25"
+            },
+            {
+                "_from_uid": "e1",
+                "_to_uid": "e26"
+            },
+            {
+                "_from_uid": "e15",
+                "_to_uid": "e25"
+            },
+            {
+                "_from_uid": "e15",
+                "_to_uid": "e26"
+            },
+            {
+                "_from_uid": "e16",
+                "_to_uid": "e25"
+            },
+            {
+                "_from_uid": "e16",
+                "_to_uid": "e26"
+            },
+            {
+                "_from_uid": "e25",
+                "_to_uid": "e28"
+            },
+            {
+                "_from_uid": "e26",
+                "_to_uid": "e28"
+            },
+            {
+                "_from_uid": "e28",
+                "_to_uid": "e29"
+            },
+            {
+                "_from_uid": "e29",
+                "_to_uid": "e27"
+            },
+            {
+                "_from_uid": "e27",
+                "_to_uid": "e30"
+            },
+            {
+                "_from_uid": "e7",
+                "_to_uid": "e30"
+            },
+            {
+                "_from_uid": "e8",
+                "_to_uid": "e30"
+            },
+            {
+                "_from_uid": "e9",
+                "_to_uid": "e30"
+            },
+            {
+                "_from_uid": "e10",
+                "_to_uid": "e30"
+            },
+            {
+                "_from_uid": "e35",
+                "_to_uid": "e30"
+            },
+            {
+                "_from_uid": "e38",
+                "_to_uid": "e30"
+            },
+            {
+                "_from_uid": "e30",
+                "_to_uid": "e31"
+            }
+        ],
+        "DURANTE":[
+            {
+                "_from_uid": "e2",
+                "_to_uid": "e3"
+            },
+            {
+                "_from_uid": "e4",
+                "_to_uid": "e5"
+            },
+            {
+                "_from_uid": "e11",
+                "_to_uid": "e12"
+            },
+            {
+                "_from_uid": "e11",
+                "_to_uid": "e13"
+            },
+            {
+                "_from_uid": "e12",
+                "_to_uid": "e13"
+            },
+            {
+                "_from_uid": "e11",
+                "_to_uid": "e7"
+            },
+            {
+                "_from_uid": "e11",
+                "_to_uid": "e8"
+            },
+            {
+                "_from_uid": "e11",
+                "_to_uid": "e9"
+            },
+            {
+                "_from_uid": "e11",
+                "_to_uid": "e10"
+            },
+            {
+                "_from_uid": "e11",
+                "_to_uid": "e35"
+            },
+            {
+                "_from_uid": "e11",
+                "_to_uid": "e38"
+            },
+            {
+                "_from_uid": "e12",
+                "_to_uid": "e7"
+            },
+            {
+                "_from_uid": "e12",
+                "_to_uid": "e8"
+            },
+            {
+                "_from_uid": "e12",
+                "_to_uid": "e9"
+            },
+            {
+                "_from_uid": "e12",
+                "_to_uid": "e10"
+            },
+            {
+                "_from_uid": "e12",
+                "_to_uid": "e35"
+            },
+            {
+                "_from_uid": "e12",
+                "_to_uid": "e38"
+            },
+            {
+                "_from_uid": "e13",
+                "_to_uid": "e7"
+            },
+            {
+                "_from_uid": "e13",
+                "_to_uid": "e8"
+            },
+            {
+                "_from_uid": "e13",
+                "_to_uid": "e9"
+            },
+            {
+                "_from_uid": "e13",
+                "_to_uid": "e10"
+            },
+            {
+                "_from_uid": "e13",
+                "_to_uid": "e35"
+            },
+            {
+                "_from_uid": "e13",
+                "_to_uid": "e38"
+            },
+            {
+                "_from_uid": "e14",
+                "_to_uid": "e7"
+            },
+            {
+                "_from_uid": "e14",
+                "_to_uid": "e8"
+            },
+            {
+                "_from_uid": "e14",
+                "_to_uid": "e9"
+            },
+            {
+                "_from_uid": "e14",
+                "_to_uid": "e10"
+            },
+            {
+                "_from_uid": "e14",
+                "_to_uid": "e35"
+            },
+            {
+                "_from_uid": "e14",
+                "_to_uid": "e38"
+            },
+            {
+                "_from_uid": "e17",
+                "_to_uid": "e7"
+            },
+            {
+                "_from_uid": "e17",
+                "_to_uid": "e8"
+            },
+            {
+                "_from_uid": "e17",
+                "_to_uid": "e9"
+            },
+            {
+                "_from_uid": "e17",
+                "_to_uid": "e10"
+            },
+            {
+                "_from_uid": "e17",
+                "_to_uid": "e35"
+            },
+            {
+                "_from_uid": "e17",
+                "_to_uid": "e38"
+            },
+            {
+                "_from_uid": "e18",
+                "_to_uid": "e7"
+            },
+            {
+                "_from_uid": "e18",
+                "_to_uid": "e8"
+            },
+            {
+                "_from_uid": "e18",
+                "_to_uid": "e9"
+            },
+            {
+                "_from_uid": "e18",
+                "_to_uid": "e10"
+            },
+            {
+                "_from_uid": "e18",
+                "_to_uid": "e35"
+            },
+            {
+                "_from_uid": "e18",
+                "_to_uid": "e38"
+            },
+            {
+                "_from_uid": "e19",
+                "_to_uid": "e7"
+            },
+            {
+                "_from_uid": "e19",
+                "_to_uid": "e8"
+            },
+            {
+                "_from_uid": "e19",
+                "_to_uid": "e9"
+            },
+            {
+                "_from_uid": "e19",
+                "_to_uid": "e10"
+            },
+            {
+                "_from_uid": "e19",
+                "_to_uid": "e35"
+            },
+            {
+                "_from_uid": "e19",
+                "_to_uid": "e38"
+            },
+            {
+                "_from_uid": "e20",
+                "_to_uid": "e7"
+            },
+            {
+                "_from_uid": "e20",
+                "_to_uid": "e8"
+            },
+            {
+                "_from_uid": "e20",
+                "_to_uid": "e9"
+            },
+            {
+                "_from_uid": "e20",
+                "_to_uid": "e10"
+            },
+            {
+                "_from_uid": "e20",
+                "_to_uid": "e35"
+            },
+            {
+                "_from_uid": "e20",
+                "_to_uid": "e38"
+            },
+            {
+                "_from_uid": "e1",
+                "_to_uid": "e7"
+            },
+            {
+                "_from_uid": "e1",
+                "_to_uid": "e8"
+            },
+            {
+                "_from_uid": "e1",
+                "_to_uid": "e9"
+            },
+            {
+                "_from_uid": "e1",
+                "_to_uid": "e10"
+            },
+            {
+                "_from_uid": "e1",
+                "_to_uid": "e35"
+            },
+            {
+                "_from_uid": "e1",
+                "_to_uid": "e38"
+            },
+            {
+                "_from_uid": "e15",
+                "_to_uid": "e7"
+            },
+            {
+                "_from_uid": "e15",
+                "_to_uid": "e8"
+            },
+            {
+                "_from_uid": "e15",
+                "_to_uid": "e9"
+            },
+            {
+                "_from_uid": "e15",
+                "_to_uid": "e10"
+            },
+            {
+                "_from_uid": "e15",
+                "_to_uid": "e35"
+            },
+            {
+                "_from_uid": "e15",
+                "_to_uid": "e38"
+            },
+            {
+                "_from_uid": "e16",
+                "_to_uid": "e7"
+            },
+            {
+                "_from_uid": "e16",
+                "_to_uid": "e8"
+            },
+            {
+                "_from_uid": "e16",
+                "_to_uid": "e9"
+            },
+            {
+                "_from_uid": "e16",
+                "_to_uid": "e10"
+            },
+            {
+                "_from_uid": "e16",
+                "_to_uid": "e35"
+            },
+            {
+                "_from_uid": "e16",
+                "_to_uid": "e38"
+            },
+            {
+                "_from_uid": "e21",
+                "_to_uid": "e7"
+            },
+            {
+                "_from_uid": "e21",
+                "_to_uid": "e8"
+            },
+            {
+                "_from_uid": "e21",
+                "_to_uid": "e9"
+            },
+            {
+                "_from_uid": "e21",
+                "_to_uid": "e10"
+            },
+            {
+                "_from_uid": "e21",
+                "_to_uid": "e35"
+            },
+            {
+                "_from_uid": "e21",
+                "_to_uid": "e38"
+            },
+            {
+                "_from_uid": "e22",
+                "_to_uid": "e7"
+            },
+            {
+                "_from_uid": "e22",
+                "_to_uid": "e8"
+            },
+            {
+                "_from_uid": "e22",
+                "_to_uid": "e9"
+            },
+            {
+                "_from_uid": "e22",
+                "_to_uid": "e10"
+            },
+            {
+                "_from_uid": "e22",
+                "_to_uid": "e35"
+            },
+            {
+                "_from_uid": "e22",
+                "_to_uid": "e38"
+            },
+            {
+                "_from_uid": "e23",
+                "_to_uid": "e7"
+            },
+            {
+                "_from_uid": "e23",
+                "_to_uid": "e8"
+            },
+            {
+                "_from_uid": "e23",
+                "_to_uid": "e9"
+            },
+            {
+                "_from_uid": "e23",
+                "_to_uid": "e10"
+            },
+            {
+                "_from_uid": "e23",
+                "_to_uid": "e35"
+            },
+            {
+                "_from_uid": "e23",
+                "_to_uid": "e38"
+            },
+            {
+                "_from_uid": "e24",
+                "_to_uid": "e7"
+            },
+            {
+                "_from_uid": "e24",
+                "_to_uid": "e8"
+            },
+            {
+                "_from_uid": "e24",
+                "_to_uid": "e9"
+            },
+            {
+                "_from_uid": "e24",
+                "_to_uid": "e10"
+            },
+            {
+                "_from_uid": "e24",
+                "_to_uid": "e35"
+            },
+            {
+                "_from_uid": "e24",
+                "_to_uid": "e38"
+            },
+            {
+                "_from_uid": "e25",
+                "_to_uid": "e7"
+            },
+            {
+                "_from_uid": "e25",
+                "_to_uid": "e8"
+            },
+            {
+                "_from_uid": "e25",
+                "_to_uid": "e9"
+            },
+            {
+                "_from_uid": "e25",
+                "_to_uid": "e10"
+            },
+            {
+                "_from_uid": "e25",
+                "_to_uid": "e35"
+            },
+            {
+                "_from_uid": "e25",
+                "_to_uid": "e38"
+            },
+            {
+                "_from_uid": "e26",
+                "_to_uid": "e7"
+            },
+            {
+                "_from_uid": "e26",
+                "_to_uid": "e8"
+            },
+            {
+                "_from_uid": "e26",
+                "_to_uid": "e9"
+            },
+            {
+                "_from_uid": "e26",
+                "_to_uid": "e10"
+            },
+            {
+                "_from_uid": "e26",
+                "_to_uid": "e35"
+            },
+            {
+                "_from_uid": "e26",
+                "_to_uid": "e38"
+            },
+            {
+                "_from_uid": "e28",
+                "_to_uid": "e7"
+            },
+            {
+                "_from_uid": "e28",
+                "_to_uid": "e8"
+            },
+            {
+                "_from_uid": "e28",
+                "_to_uid": "e9"
+            },
+            {
+                "_from_uid": "e28",
+                "_to_uid": "e10"
+            },
+            {
+                "_from_uid": "e28",
+                "_to_uid": "e35"
+            },
+            {
+                "_from_uid": "e28",
+                "_to_uid": "e38"
+            },
+            {
+                "_from_uid": "e29",
+                "_to_uid": "e7"
+            },
+            {
+                "_from_uid": "e29",
+                "_to_uid": "e8"
+            },
+            {
+                "_from_uid": "e29",
+                "_to_uid": "e9"
+            },
+            {
+                "_from_uid": "e29",
+                "_to_uid": "e10"
+            },
+            {
+                "_from_uid": "e29",
+                "_to_uid": "e35"
+            },
+            {
+                "_from_uid": "e29",
+                "_to_uid": "e38"
+            },
+            {
+                "_from_uid": "e27",
+                "_to_uid": "e7"
+            },
+            {
+                "_from_uid": "e27",
+                "_to_uid": "e8"
+            },
+            {
+                "_from_uid": "e27",
+                "_to_uid": "e9"
+            },
+            {
+                "_from_uid": "e27",
+                "_to_uid": "e10"
+            },
+            {
+                "_from_uid": "e27",
+                "_to_uid": "e35"
+            },
+            {
+                "_from_uid": "e27",
+                "_to_uid": "e38"
+            },
+            {
+                "_from_uid": "e1",
+                "_to_uid": "e17"
+            },
+            {
+                "_from_uid": "e1",
+                "_to_uid": "e18"
+            },
+            {
+                "_from_uid": "e1",
+                "_to_uid": "e19"
+            },
+            {
+                "_from_uid": "e1",
+                "_to_uid": "e20"
+            },
+            {
+                "_from_uid": "e1",
+                "_to_uid": "e21"
+            },
+            {
+                "_from_uid": "e1",
+                "_to_uid": "e22"
+            },
+            {
+                "_from_uid": "e1",
+                "_to_uid": "e23"
+            },
+            {
+                "_from_uid": "e1",
+                "_to_uid": "e24"
+            },
+            {
+                "_from_uid": "e15",
+                "_to_uid": "e18"
+            },
+            {
+                "_from_uid": "e15",
+                "_to_uid": "e19"
+            },
+            {
+                "_from_uid": "e15",
+                "_to_uid": "e20"
+            },
+            {
+                "_from_uid": "e15",
+                "_to_uid": "e21"
+            },
+            {
+                "_from_uid": "e15",
+                "_to_uid": "e22"
+            },
+            {
+                "_from_uid": "e15",
+                "_to_uid": "e23"
+            },
+            {
+                "_from_uid": "e15",
+                "_to_uid": "e24"
+            },
+            {
+                "_from_uid": "e16",
+                "_to_uid": "e17"
+            },
+            {
+                "_from_uid": "e16",
+                "_to_uid": "e18"
+            },
+            {
+                "_from_uid": "e16",
+                "_to_uid": "e19"
+            },
+            {
+                "_from_uid": "e16",
+                "_to_uid": "e20"
+            },
+            {
+                "_from_uid": "e16",
+                "_to_uid": "e21"
+            },
+            {
+                "_from_uid": "e16",
+                "_to_uid": "e22"
+            },
+            {
+                "_from_uid": "e16",
+                "_to_uid": "e23"
+            },
+            {
+                "_from_uid": "e16",
+                "_to_uid": "e24"
+            },
+            {
+                "_from_uid": "e17",
+                "_to_uid": "e18"
+            },
+            {
+                "_from_uid": "e17",
+                "_to_uid": "e19"
+            },
+            {
+                "_from_uid": "e17",
+                "_to_uid": "e20"
+            },
+            {
+                "_from_uid": "e18",
+                "_to_uid": "e19"
+            },
+            {
+                "_from_uid": "e18",
+                "_to_uid": "e20"
+            },
+            {
+                "_from_uid": "e19",
+                "_to_uid": "e20"
+            },
+            {
+                "_from_uid": "e22",
+                "_to_uid": "e23"
+            },
+            {
+                "_from_uid": "e22",
+                "_to_uid": "e24"
+            },
+            {
+                "_from_uid": "e23",
+                "_to_uid": "e24"
+            },
+            {
+                "_from_uid": "e1",
+                "_to_uid": "e15"
+            },
+            {
+                "_from_uid": "e1",
+                "_to_uid": "e16"
+            },
+            {
+                "_from_uid": "e15",
+                "_to_uid": "e16"
+            },
+            {
+                "_from_uid": "e25",
+                "_to_uid": "e26"
+            }
+        ],
+        "ENCONTRAR":[
+            {
+                "_from_uid": "e39",
+                "_to_uid": "e34"
+            }
+        ],
+        "NÃO_TINHA":[
+            {
+                "_from_uid": "p1",
+                "_to_uid": "o2"
+            }
+        ],
+        "TINHA":[
+            {
+                "_from_uid": "o1",
+                "_to_uid": "f1"
+            },
+            {
+                "_from_uid": "o1",
+                "_to_uid": "f2"
+            }
+        ],
+        "SABE_QUE":[
+            {
+                "_from_uid": "p3",
+                "_to_uid": "f4"
+            }
+        ],
+        "ENCONTRADA":[
+            {
+                "_from_uid": "o2",
+                "_to_uid": "f5"
+            }
+        ],
+        "PROXIMA":[
+            {
+                "_from_uid": "f6",
+                "_to_uid": "n3"
+            }
+        ]
+    }
+}

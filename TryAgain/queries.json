@@ -1,0 +1,497 @@
+{
+    "nodes":{
+      "Pessoa":[
+        {
+          "_uid": "p1",
+          "nome": "Roberto",
+          "sobrenome": "Gaia",
+          "profissao": "Empresário"
+        },
+        {
+            "_uid": "p2",
+            "nome": "Maria",
+            "sobrenome": "Gaia"
+        },
+        {
+            "_uid": "p3",
+            "nome": "Eduardo",
+            "sobrenome": "Silva",
+            "profissao": "Faz-tudo"
+        },
+        {
+            "_uid": "p4",
+            "nome": "Bruno",
+            "sobrenome": "Pereira",
+            "profissao": "Jardineiro"
+        },
+        {
+            "_uid": "p5",
+            "nome": "Miguel",
+            "sobrenome": "Matos",
+            "profissao": "Empresário"
+        },
+        {
+            "_uid": "p6",
+            "nome": "Simão",
+            "sobrenome": "Nogueira",
+            "profissao": "Gestor de peças"
+        },
+        {
+            "_uid": "p7",
+            "nome": "Duarte",
+            "sobrenome": "Dias",
+            "profissao": "Empresário"
+        },
+        {
+            "_uid": "p8",
+            "nome": "Sara",
+            "sobrenome": "Silva",
+            "profissao": "Contabilista"
+        }
+      ],
+      "Negocio": [
+        {
+            "_uid": "n1",
+            "nome": "AutoGaia"
+        },
+        {
+            "_uid": "n2",
+            "nome": "MMAuto"
+        },
+        {
+            "_uid": "n3",
+            "nome": "Loja Dias"
+        },
+        {
+            "_uid": "n4",
+            "nome": "Café"
+        },
+        {
+            "_uid": "n5",
+            "nome": "Clube LX"
+        }
+
+      ],
+      "Evento": [
+        {
+            "_uid": "e1",
+            "nome": "Assasinato"
+        }
+      ],
+      "Objeto":[
+        {
+            "_uid": "o1",
+            "nome": "Pé-de-cabra"
+        },
+        {
+            "_uid": "o2",
+            "nome": "Carteira"
+        },
+        {
+            "_uid": "o3",
+            "nome": "Carro"
+        }, 
+        {
+            "_uid": "o4",
+            "nome": "Casa"
+        }
+      ]
+    },
+    "relationships":{
+        "VITIMA":[
+          {
+            "_from_uid": "p1",
+            "_to_uid": "e1",
+            "frase": "O Sr.Gaia é a vitima do assasinato."
+          }
+        ],
+        "SUSPEITO":[
+            {
+              "_from_uid": "p3",
+              "_to_uid": "e1",
+              "frase": "O Eduardo é suspeito do assasinato."
+            },
+            {
+                "_from_uid": "p4",
+                "_to_uid": "e1",
+                "frase": "O Bruno é suspeito do assasinato."
+            },
+            {
+                "_from_uid": "p5",
+                "_to_uid": "e1",
+                "frase": "O Miguel é suspeito do assasinato."
+            }
+        ],
+        "DONO":[
+            {
+                "_from_uid": "p1",
+                "_to_uid": "n1",
+                "frase": "O Sr.Gaia é dono do AutoGaia."
+            },
+            {
+                "_from_uid": "p5",
+                "_to_uid": "n2",
+                "frase": "O Miguel é dono da MMAuto."
+            },
+            {
+                "_from_uid": "p7",
+                "_to_uid": "n3",
+                "frase": "O Duarte é dono da Loja Dias."
+            },
+            {
+                "_from_uid": "p1",
+                "_to_uid": "o2",
+                "frase": "O Sr.Gaia é o dono da carteira."
+            },
+            {
+                "_from_uid": "p1",
+                "_to_uid": "o4",
+                "frase": "O Sr.Gaia é o dono da sua casa."
+            },
+            {
+                "_from_uid": "p3",
+                "_to_uid": "o1",
+                "frase": "O pé-de-cabra pertence ao Eduardo."
+            }
+        ],
+        "CASADO_COM":[
+            {
+                "_from_uid": "p1",
+                "_to_uid": "p2",
+                "frase": "O Sr.Gaia é casado com a Maria."
+            }
+        ],
+        "TRABALHA_PARA":[
+            {
+                "_from_uid": "p3",
+                "_to_uid": "p1",
+                "frase": "O Eduardo é o faz-tudo do Sr.Gaia."
+            },
+            {
+                "_from_uid": "p3",
+                "_to_uid": "p4",
+                "frase": "O Bruno é o jardineiro do Sr.Gaia."
+            }
+        ],
+        "TRABALHA":[
+            {
+                "_from_uid": "p6",
+                "_to_uid": "n1",
+                "frase": "O Simão é gestor de peças na AutoGaia."
+            }
+        ],
+        "FORNECEDOR":[
+            {
+                "_from_uid": "p5",
+                "_to_uid": "p1",
+                "frase": "Miguel é o fornecedor do Sr.Gaia."
+            }
+        ],
+        "FILHA":[
+            {
+                "_from_uid": "p8",
+                "_to_uid": "p3",
+                "frase": "Sara é a filha do Eduardo."
+            }
+        ],
+        "ENVIOU_PECAS_DEFEITO":[
+            {
+                "_from_uid": "p5",
+                "_to_uid": "p1",
+                "frase": "À cerca de 2 meses antes do crime Miguel começou a enviar peças auto com defeitos."
+            }
+        ],
+        "RIVALIDADE_EMPRESARIAL":[
+            {
+                "_from_uid": "p5",
+                "_to_uid": "p1",
+                "frase": "À cerca de 2 meses antes do crime Miguel e Sr.Gaia rivalidade empresarial começou."
+            }
+        ],
+        "AMEAÇOU":[
+            {
+                "_from_uid": "p1",
+                "_to_uid": "p5",
+                "frase": "Sr.Gaia enviou uma nota a ameaçar Miguel."
+            }
+        ],
+        "RECUSOU_OFERTA":[
+            {
+                "_from_uid": "p1",
+                "_to_uid": "p5",
+                "frase": "Sr.Gaia recusou a oferta de Miguel."
+            }
+        ],
+        "DESPEDIU_SE":[
+            {
+                "_from_uid": "p8",
+                "_to_uid": "n1",
+                "frase": "Sara despediu-se da Oficina Gaia."
+            }
+        ],
+        "PEDIR_DINHEIRO":[
+            {
+                "_from_uid": "p4",
+                "_to_uid": "p1",
+                "frase": "Por volta das 4h de sexta Bruno foi a casa do Sr.Gaia para pedir dinheiro."
+            }
+        ],
+        "DEIXOU_EXPOSTO":[
+            {
+                "_from_uid": "p3",
+                "_to_uid": "o1",
+                "frase": "Eduardo deixou seu pé-de-cabra exposto por várias horas na manhã de sábado."
+            }
+        ],
+        "DOENTE":[
+            {
+                "_from_uid": "p4",
+                "_to_uid": "p4",
+                "frase": "Bruno ficou doente na manhã de sábado."
+            }
+        ],
+        "NÃO_CORTOU_RELVA":[
+            {
+                "_from_uid": "p4",
+                "_to_uid": "p4",
+                "frase": "Bruno não cortou a relva na manhã de sábado."
+            }
+        ],
+        "DISCUÇÃO_TELEMOVEL":[
+            {
+                "_from_uid": "p5",
+                "_to_uid": "p1",
+                "frase": "Miguel discutiu por telemovel com o Sr.Gaia na manhã de sábado."
+            }
+        ],
+        "CHEGOU_CASA":[
+            {
+                "_from_uid": "p3",
+                "_to_uid": "o4",
+                "frase": "Às 6h de sábado Eduardo chegou a casa do Sr.Gaia."
+            }
+        ],
+        "ESTACIONOU_TELHEIRO":[
+            {
+                "_from_uid": "p3",
+                "_to_uid": "p3",
+                "frase": "Às 6h de sábado Eduardo estacionou o seu carro no telheiro."
+            }
+        ],
+        "LUZ_ESTUDIO":[
+            {
+                "_from_uid": "p3",
+                "_to_uid": "p1",
+                "frase": "Às 6h de sábado Eduardo viu a luz do estudio do Sr.Gaia acesa."
+            }
+        ],
+        "SAIU_CASA":[
+            {
+                "_from_uid": "p5",
+                "_to_uid": "p5",
+                "frase": "Por volta das 6h25 de sábado Miguel saiu de casa."
+            }
+        ],
+        "MORREU":[
+            {
+                "_from_uid": "p1",
+                "_to_uid": "e1",
+                "frase": "O Sr.Gaia morreu entre as 6h30 e as 7h."
+            }
+        ],
+        "ATENGIDO":[
+            {
+                "_from_uid": "p1",
+                "_to_uid": "o1",
+                "frase": "O Sr.Gaia foi atingido com um pé-de-cabra."
+            }
+        ],
+        "CAUSA_MORTE":[
+            {
+                "_from_uid": "p1",
+                "_to_uid": "e1",
+                "frase": "A causa da morte do Sr.Gaia foi a queda."
+            }
+        ],
+        "ESTEVE":[
+            {
+                "_from_uid": "p5",
+                "_to_uid": "n4",
+                "frase": "Por volta das 6h40 Miguel bebeu café."
+            }
+        ],
+        "OUVIU_BARULHO_RUA":[
+            {
+                "_from_uid": "p2",
+                "_to_uid": "p2",
+                "frase": "Às 6h40 Maria ouviu barulhos na rua."
+            }
+        ],
+        "OUVIU_CARRO_SAIR":[
+            {
+                "_from_uid": "p2",
+                "_to_uid": "p2",
+                "frase": "Às 6h40 Maria ouviu um carro a sair."
+            }
+        ],
+        "VIU_CARRO_TELHEIRO":[
+            {
+                "_from_uid": "p2",
+                "_to_uid": "p1",
+                "frase": "Às 6h40 Maria viu o carro do Sr.Gaia no telheiro."
+            }
+        ],
+        "SAIU":[
+            {
+                "_from_uid": "p5",
+                "_to_uid": "n4",
+                "frase": "Por volta das 6h50 Miguel saiu do café."
+            }
+        ],
+        "CHEGOU":[
+            {
+                "_from_uid": "p5",
+                "_to_uid": "n5",
+                "frase": "Às 7h Miguel chegou ao campo de golf."
+            }
+        ],
+        "OUVIU_CARRO":[
+            {
+                "_from_uid": "p3",
+                "_to_uid": "p4",
+                "frase": "Eduardo disse que ouviu o carro do Bruno às 7h."
+            }
+        ],
+        "LARGOU":[
+            {
+                "_from_uid": "o2",
+                "_to_uid": "o3",
+                "frase": "Às 7h um carro largou a carteira do Sr.Gaia."
+            }
+        ],
+        "ENCONTROU":[
+            {
+                "_from_uid": "p4",
+                "_to_uid": "p1",
+                "frase": "Às 8h o Bruno encontrou o corpo e fugiu."
+            },
+            {
+                "_from_uid": "p3",
+                "_to_uid": "p1",
+                "frase": "Por volta das 10h30 Eduardo encontrou o corpo."
+            }
+        ],
+        "ACORDOU":[
+            {
+                "_from_uid": "p2",
+                "_to_uid": "p2",
+                "frase": "Por volta das 9h ou 9h15 a Maria acordou."
+            }
+        ],
+        "AEROBICA":[
+            {
+                "_from_uid": "p2",
+                "_to_uid": "p2",
+                "frase": "Entre as 9h30 e 10h a Maria fez aerobica."
+            }
+        ],
+        "JOGO":[
+            {
+                "_from_uid": "p4",
+                "_to_uid": "p4",
+                "frase": "Bruno tinha um jogo à tarde."
+            }
+        ],
+        "VISITOU":[
+            {
+                "_from_uid": "p5",
+                "_to_uid": "p2",
+                "frase": "Miguel e a esposa visitaram Maria no Domingo."
+            }
+        ],
+        "MENTIU":[
+            {
+                "_from_uid": "p4",
+                "_to_uid": "o4",
+                "frase": "Bruno mentiu sobre ter estado na casa do Sr.Gaia na manhã de sábado."
+            }
+        ],
+        "ENCONTRADO_ARBUSTOS":[
+            {
+                "_from_uid": "o1",
+                "_to_uid": "o1",
+                "frase": "O pé-de-cabra foi encontrado nos arbustos."
+            }
+        ],
+        "ES_GRAVADO":[
+            {
+                "_from_uid": "o1",
+                "_to_uid": "o1",
+                "frase": "O pé-de-cabra tinha ES gravado."
+            }
+        ],
+        "IMPRESSÕES_DIGITAIS":[
+            {
+                "_from_uid": "o1",
+                "_to_uid": "p4",
+                "frase": "O pé-de-cabra tinha impressões digitais do Bruno."
+            }
+        ],
+        "PROBLEMAS_DINEIRO_JOGO":[
+            {
+                "_from_uid": "p4",
+                "_to_uid": "p4",
+                "frase": "Bruno têm problemas com dinheiro e jogo."
+            }
+        ],
+        "SABIA_HORARIO":[
+            {
+                "_from_uid": "p3",
+                "_to_uid": "p1",
+                "frase": "Eduardo sabia que o Sr.Gaia saia de casa sempre às 6h30."
+            }
+        ],
+        "NÃO_TINHA":[
+            {
+                "_from_uid": "p1",
+                "_to_uid": "o2",
+                "frase": "O corpo não tinha carteira."
+            }
+        ],
+        "SEM_DINHEIRO":[
+            {
+                "_from_uid": "o2",
+                "_to_uid": "o2",
+                "frase": "A carteira foi encontrada sem dinheiro."
+            }
+        ],
+        "ENCONTRADA":[
+            {
+                "_from_uid": "o2",
+                "_to_uid": "n3",
+                "frase": "A carteira foi encontrada na Loja Dias."
+            }
+        ],
+        "PROXIMA_DA_ROTA":[
+            {
+                "_from_uid": "n3",
+                "_to_uid": "p5",
+                "frase": "A Loja Dias é proxima da rota de Miguel até ao campo de golf."
+            }
+        ],
+        "MARCAS_RODAS":[
+            {
+                "_from_uid": "p4",
+                "_to_uid": "p4",
+                "frase": "As marcas de rodas feitas na manhã de sabado são do carro do Bruno."
+            }
+        ],
+        "TRANCA_FERRAMENTAS":[
+            {
+                "_from_uid": "p3",
+                "_to_uid": "p3",
+                "frase": "Habitualmente Eduardo tranca as suas ferramentas."
+            }
+        ]
+    }
+}

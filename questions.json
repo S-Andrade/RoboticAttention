@@ -1,0 +1,42 @@
+[
+    {
+        "question" : "Quem é a carla?",
+        "nodes": ["CARLA", "CAFÉ"]
+    },
+    {
+        "question" : "O que aconteceu entre a Sara e o Sr.Gaia?",
+        "nodes": ["SARA", "SR.GAIA"]
+    },
+    {
+        "question" : "A Maria confirmou o emprestimo de dinheiro ao Bruno?",
+        "nodes": ["MARIA","BRUNO"]
+    },
+    {
+        "question" : "O que é que a carla disse?",
+        "nodes": ["CARLA", "MIGUEL"]
+    },
+    {
+        "question" : "A Maria viu o carro do Eduardo no carpot?",
+        "nodes": ["MARIA", "EDUARDO"]
+    },
+    {
+        "question" : "O Ricardo disse a que horas o Miguel chegou ao campo de golf?",
+        "nodes": ["RICARDO", "MIGUEL"]
+    },
+    {
+        "question" : "A que horas o carro largou a carteira?",
+        "nodes": ["CARTEIRA", "CARRO"]
+    },
+    {
+        "question" : "Sabes alguma coisa diferente sobre o Eduardo?",
+        "nodes": ["EDUARDO", "EDUARDO"]
+    },
+    {
+        "question" : "O carro que largou a carteira fazia barulho?",
+        "nodes": ["CARRO", "CARTEIRA"]
+    },
+    {
+        "question" : "Porque que as impressoes digitais do Bruno estavam no pé-de-cabra?",
+        "nodes": ["BRUNO", "PÉ-DE-CABRA"]
+    }
+]
