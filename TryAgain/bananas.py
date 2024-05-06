@@ -78,13 +78,13 @@ query_engine = index.as_query_engine(
     similarity_top_k=5,
 )
 
-robot_ip = "192.168.0.102"
-robot = ElmoV2API(robot_ip, debug=True)
-robot.enable_behavior(name="look_around", control = False)
-robot.set_pan(0)
-robot.set_tilt(-8)
-robot.set_pan_torque(True)
-robot.set_screen("normal.png")
+#robot_ip = "192.168.0.102"
+#robot = ElmoV2API(robot_ip, debug=True)
+#robot.enable_behavior(name="look_around", control = False)
+#robot.set_pan(0)
+#robot.set_tilt(-8)
+#robot.set_pan_torque(True)
+#robot.set_screen("normal.png")
 
 with open('time.json', encoding="utf-8") as f:
     data = json.load(f)
@@ -373,7 +373,7 @@ def Input(event, data, nodes):
             if event.isSet():
                 event.wait()
             else: 
-                robot.set_pan(-40)
+                #robot.set_pan(-40)
                 stream.audio_input = []
                 audio_generator = stream.generator()
                 
@@ -393,7 +393,7 @@ def Input(event, data, nodes):
 
                         if len(historico['robot']) == 0 or message != historico['robot'][-1]:
 
-                            robot.set_screen("thinking.png")
+                            #robot.set_screen("thinking.png")
                             historico['user'] += [message]
                             m1 = [{"role": "user", "content": getPromptQuestion(message)}]
                             question = chatGPT(m1)   
@@ -452,10 +452,10 @@ def Input(event, data, nodes):
                                 
                                 historico['robot'] += [response]
                             print("--" + r)
-                            robot.set_screen("normal.png")
+                            #robot.set_screen("normal.png")
                             #time.sleep(2)
-                            robot.speak(r,"pt")
-                            robot.set_pan(0)
+                            #robot.speak(r,"pt")
+                            #robot.set_pan(0)
                             """engine.say(r)
                             engine.iterate()
                             while engine.isBusy(): # wait until finished talking

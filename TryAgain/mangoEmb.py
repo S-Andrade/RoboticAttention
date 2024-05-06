@@ -1,6 +1,5 @@
 import threading
 import time
-
 # -*- coding: utf-8 -*-
 import json
 import sys
@@ -34,6 +33,8 @@ from IPython.display import Markdown, display
 from random import randint
 from ElmoV2API import ElmoV2API
 from sentence_transformers import SentenceTransformer, util
+import ast
+import torch
 
 model = SentenceTransformer("all-MiniLM-L6-v2")
 
@@ -77,13 +78,13 @@ query_engine = index.as_query_engine(
     embedding_mode="hybrid",
     similarity_top_k=5,
 )
-"""
-robot_ip = "192.168.0.102"
-robot = ElmoV2API(robot_ip, debug=True)
-robot.enable_behavior(name="look_around", control = False)
-robot.set_pan(0)
-robot.set_tilt(-8)
-robot.set_pan_torque(True)"""
+
+#robot_ip = "192.168.0.102"
+#robot = ElmoV2API(robot_ip, debug=True)
+#robot.enable_behavior(name="look_around", control = False)
+#robot.set_pan(0)
+#robot.set_tilt(-8)
+#robot.set_pan_torque(True)
 
 with open('time.json', encoding="utf-8") as f:
     data = json.load(f)
@@ -125,9 +126,8 @@ def getPromptTwo(query, vector_result, graph_result):
 
         Unstructured information: {vector_result}. 
         Structured information: {graph_result}.
-        Deves de dar prioridada aos dados que te são fornecidos no Structured information.
         A tua resposta deve de ser sumarizada e deves extrair a informação mais importante e escreve-la numa versão simples, curta, simpatica e informal. 
-        Deves de ser o mais curto possivel! Usa no maximo 15 palavras!
+        Deves de ser o mais curto possivel! Usa no maximo 10 palavras!
         Têm em consideração todos os dados que te são fornecidos!
         Pensa duas vezes antes de dar uma resposta!
         Deves de só responder ao que te foi perguntado, não des informação a mais!
@@ -188,6 +188,7 @@ def chatGPT(messages, model="gpt-3.5-turbo"):
 
 def Input(event, data, nodes):
     
+    previous = []
     messages = []
     historico = {'user': [], 'robot': []}
 
@@ -200,25 +201,39 @@ def Input(event, data, nodes):
         historico['user'] += [message]
         m1 = [{"role": "user", "content": getPromptQuestion(message)}]
         question = chatGPT(m1)   
-        
-        keys = [n for n in nodes if re.search(n, message, re.IGNORECASE)]
+        keys = []
+        embeddingMessage = model.encode(message, convert_to_tensor=True)
+        for n , emb in nodes.items():
+            cosine_scores = util.cos_sim(embeddingMessage, emb)
+            if cosine_scores[0][0] >= 0.7:
+                #print(n + " : " + str(cosine_scores))
+                keys += [n]
+    
+        #print(k)
 
-        keys = [i for i in keys if not any(i in s for s in keys if i != s)]
+        #keys = [n for n in nodes if re.search(n, message, re.IGNORECASE)]
+        """if re.search("Sr.Gaia", message, re.IGNORECASE) or re.search("Sr. Gaia", message, re.IGNORECASE) or re.search("Senhor Gaia", message, re.IGNORECASE):
+            if "Casa do Sr.Gaia" not in keys:
+                keys += ["Roberto"]"""
+
         print(keys)
 
         t = []
         
         if len(keys) == 1:
-            t = executeQuery("MATCH (a {name: '"+ keys[0] +"'})-[r*1..2]-(b) RETURN distinct properties(b)").data()
-            messages = []
+            t = [ [n["a"], n["r"], n["b"]] for n in executeQuery("MATCH (a {Name: '"+ keys[0] +"'})-[r]-(b)return a, r, b").data()]
+            previous = []
 
         if len(keys) > 1:
-            messages = []
+            previous = []
             lista = list(combinations(keys, 2))
             for l in lista:
-                t += executeQuery("match p=(a{name:'"+l[0]+"'})-[r*0..3]->(d {name:'"+l[1]+"'}) UNWIND relationships(p) AS relation UNWIND nodes(p) AS b RETURN distinct type(relation), properties(b)").data()
-        #print(t)
-        
+                t += [[n["a"], n["r"], n["b"]] for n in executeQuery("MATCH (a {Name: '"+ l[0] +"'})-[r]-(b {Name: '"+ l[1] +"'})return a, r, b").data()]
+            if len(t) <= 2:
+                for k in keys:
+                    t += [ [n["a"], n["r"], n["b"]] for n in executeQuery("MATCH (a {Name: '"+ k +"'})-[r]-(b)return a, r, b").data()]
+
+
         #print(question)
         if question == "True":
             vector_result = query_engine.query(message)
@@ -258,12 +273,7 @@ def Input(event, data, nodes):
         #time.sleep(2)
         #robot.speak(r,"pt")
         #robot.set_pan(0)
-        """engine.say(r)
-        engine.iterate()
-        while engine.isBusy(): # wait until finished talking
-            time.sleep(0.1)         
-        engine.endLoop()"""
-
+        
 
 def askquestion(event, enable,):
     """engine = pyttsx3.init('sapi5')
@@ -302,7 +312,14 @@ def main():
     with open('time.json', encoding="utf8") as f:
         data = json.load(f)
     
-    nodes = [n["n.name"] for n in executeQuery("MATCH (n) RETURN n.name").data() if n["n.name"] != None]
+    no = executeQuery("MATCH (n) RETURN n.Name, n.Embedding").data()
+
+    nodes = {}
+    i = 0
+    for n in no:
+        if n["n.Name"] != None:
+            nodes[n["n.Name"]] = torch.Tensor(ast.literal_eval(n["n.Embedding"]))
+            i+=1
 
     event = threading.Event()
     a = threading.Thread(target=Input, args=(event, data, nodes, )).start()

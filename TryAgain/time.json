@@ -1,510 +1,511 @@
 {
     "nodes":{
-      "Pessoa":[
+      "Person":[
         {
           "_uid": "p1",
-          "nome": "Roberto",
-          "sobrenome": "Gaia",
-          "profissao": "Empresário"
+          "name": "Roberto",
+          "Surname": "Gaia",
+          "Occupation": "Empresário"
         },
         {
             "_uid": "p2",
-            "nome": "Maria",
-            "sobrenome": "Gaia"
+            "name": "Maria",
+            "Surname": "Gaia"
         },
         {
             "_uid": "p3",
-            "nome": "Eduardo",
-            "sobrenome": "Silva",
-            "profissao": "Faz-tudo"
+            "name": "Eduardo",
+            "Surname": "Silva",
+            "Occupation": "Faz-tudo"
         },
         {
             "_uid": "p4",
-            "nome": "Bruno",
-            "sobrenome": "Pereira",
-            "profissao": "Jardineiro"
+            "name": "Bruno",
+            "Surname": "Pereira",
+            "Occupation": "Jardineiro"
         },
         {
             "_uid": "p5",
-            "nome": "Miguel",
-            "sobrenome": "Matos",
-            "profissao": "Empresário"
+            "name": "Miguel",
+            "Surname": "Matos",
+            "Occupation": "Empresário"
         },
         {
             "_uid": "p6",
-            "nome": "Simão",
-            "sobrenome": "Nogueira",
-            "profissao": "Gestor de peças"
+            "name": "Simão",
+            "Surname": "Nogueira",
+            "Occupation": "Gestor de peças"
         },
         {
             "_uid": "p7",
-            "nome": "Duarte",
-            "sobrenome": "Dias",
-            "profissao": "Empresário"
+            "name": "Duarte",
+            "Surname": "Dias",
+            "Occupation": "Empresário"
         },
         {
             "_uid": "p8",
-            "nome": "Sara",
-            "sobrenome": "Silva",
-            "profissao": "Contabilista"
+            "name": "Sara",
+            "Surname": "Silva",
+            "Occupation": "Contabilista"
         },
         {
             "_uid": "p8",
-            "nome": "Carla",
-            "sobrenome": "Castro"
+            "name": "Carla",
+            "Surname": "Castro"
+        },
+        {
+            "_uid": "p9",
+            "name": "Senhor Gaia"
         }
       ],
-      "Negocio": [
+      "Business": [
         {
             "_uid": "n1",
-            "nome": "AutoGaia"
+            "name": "AutoGaia"
         },
         {
             "_uid": "n2",
-            "nome": "MMAuto"
+            "name": "MMAuto"
         },
         {
             "_uid": "n3",
-            "nome": "Loja Dias"
+            "name": "Loja Dias"
         },
         {
             "_uid": "n4",
-            "nome": "Café"
+            "name": "Café"
         },
         {
             "_uid": "n5",
-            "nome": "Clube LX"
+            "name": "Clube LX"
         }
       ],
-      "Sitio":[
+      "Location":[
         {
             "_uid": "s1",
-            "nome": "Casa do Sr.Gaia"
+            "name": "Casa do Senhor Gaia"
         },
         {
             "_uid": "s2",
-            "nome": "Telheiro"
+            "name": "Telheiro"
         },
         {
             "_uid": "s3",
-            "nome": "Escadas"
+            "name": "Escadas"
         },
         {
             "_uid": "s4",
-            "nome": "Arbustos"
+            "name": "Arbustos"
         }
       ],
-      "Evento": [
+      "Event": [
         {
             "_uid": "e1",
-            "nome": "Assasinato",
-            "Quando":"entre as 6:30 e as 7h da manhã de sábado",
-            "Quem": "Sr.Gaia",
-            "Onde": "Casa do Sr.Gaia",
-            "Oque": "morreu",
-            "Como": "atengido com um pé-de-cabra seguido por uma queda por um lance de escadas"
+            "name": "Assasinato",
+            "when":"entre as 6:30 e as 7h da manhã de sábado",
+            "who": "Senhor Gaia",
+            "where": "Casa do Senhor Gaia",
+            "what": "morreu",
+            "how": "atengido com um pé-de-cabra seguido por uma queda por um lance de escadas"
         },
         {
             "_uid": "e2",
-            "nome": "peças com defeito",
-            "Quando":"2 meses antes",
-            "Quem": "Miguel",
-            "Onde": "MMAuto e AutoGaia",
-            "Oque": "MMAuto enviou peças com defeito à AutoGaia"
+            "name": "peças com defeito",
+            "when":"2 meses antes",
+            "who": "Miguel",
+            "where": "MMAuto e AutoGaia",
+            "what": "MMAuto enviou peças com defeito à AutoGaia"
         },
         {
             "_uid": "e3",
-            "nome": "Rivalidade empresarial",
-            "Quando":"2 meses antes",
-            "Quem": "Miguel e Sr.Gaia",
-            "Onde": "MMAuto e AutoGaia",
-            "Oque": "começou rivalidade",
-            "Porque":"MMAuto enviou peças com defeito à AutoGaia"
+            "name": "Rivalidade empresarial",
+            "when":"2 meses antes",
+            "who": "Miguel e Senhor Gaia",
+            "where": "MMAuto e AutoGaia",
+            "what": "começou rivalidade",
+            "why":"MMAuto enviou peças com defeito à AutoGaia"
         },
         {
             "_uid": "e4",
-            "nome": "Ameaça",
-            "Quando":"1 semana antes",
-            "Quem": "Sr.Gaia e Miguel",
-            "Oque": "Sr.Gaia enviou nota com ameaça a Miguel",
-            "Porque":"envio de peças com defeito"
+            "name": "Ameaça",
+            "when":"1 semana antes",
+            "who": "Senhor Gaia e Miguel",
+            "what": "Senhor Gaia enviou nota com ameaça a Miguel",
+            "why":"envio de peças com defeito"
         },
         {
             "_uid": "e5",
-            "nome": "Oferta",
-            "Quando":"1 semana antes",
-            "Quem": "Miguel e Sr.Gaia",
-            "Oque": "Miguel fez uma oferta ao Sr.Gaia mas ele recusou",
-            "Porque":"Para resolver a rivalidade",
-            "Como": "Ofereceu melhores condições"
+            "name": "Oferta",
+            "when":"1 semana antes",
+            "who": "Miguel e Senhor Gaia",
+            "what": "Miguel fez uma oferta ao Senhor Gaia mas ele recusou",
+            "why":"Para resolver a rivalidade",
+            "how": "Ofereceu melhores condições"
         },
         {
             "_uid": "e6",
-            "nome": "Pedir dinheiro",
-            "Quando":"Sexta às 4h da tarde",
-            "Quem": "Bruno",
-            "Onde": "Casa do Sr.Gaia",
-            "Oque": "pediu dinheiro ao Sr.Gaia",
-            "Porque":"problemas com jogo e dinheiro"
+            "name": "Pedir dinheiro",
+            "when":"Sexta às 4h da tarde",
+            "who": "Bruno",
+            "where": "Casa do Senhor Gaia",
+            "what": "pediu dinheiro ao Senhor Gaia",
+            "why":"problemas com jogo e dinheiro"
         },
         {
             "_uid": "e7",
-            "nome": "exposto por varias horas",
-            "Quando":"na manhã de sábado",
-            "Quem": "Eduardo",
-            "Onde": "Casa do Sr.Gaia",
-            "Oque": "pé-de-cabra"
+            "name": "exposto por varias horas",
+            "when":"na manhã de sábado",
+            "who": "Eduardo",
+            "where": "Casa do Senhor Gaia",
+            "what": "pé-de-cabra"
         },
         {
             "_uid":"e8",
-            "nome": "doente",
-            "Quando":"manhã de sábado",
-            "Quem": "Bruno",
-            "Oque": "Bruno ficou doente"
+            "name": "doente",
+            "when":"manhã de sábado",
+            "who": "Bruno",
+            "what": "Bruno ficou doente"
         },
         {
             "_uid":"e9",
-            "nome": "cortar relva",
-            "Quando":"manhã de sábado",
-            "Quem": "Bruno",
-            "Onde": "Casa do Sr.Gaia",
-            "Oque": "não cortou a relva",
-            "Porque":"estava doente"
+            "name": "cortar relva",
+            "when":"manhã de sábado",
+            "who": "Bruno",
+            "where": "Casa do Senhor Gaia",
+            "what": "não cortou a relva",
+            "why":"estava doente"
         },
         {
             "_uid":"e10",
-            "nome": "discução",
-            "Quando":"manhã de sábado",
-            "Quem": "Miguel e Sr.Gaia",
-            "Onde": "por telemovel",
-            "Oque": "discutiram",
-            "Porque":"por causa da sua rivalidade"
+            "name": "discução",
+            "when":"manhã de sábado",
+            "who": "Miguel e Senhor Gaia",
+            "where": "por telemovel",
+            "what": "discutiram",
+            "why":"por causa da sua rivalidade"
         },
         {
             "_uid":"e11",
-            "nome": "chegar",
-            "Quando":"6h da manhã de sábado",
-            "Quem": "Eduardo",
-            "Onde": "Casa do Sr.Gaia",
-            "Oque": "chegou a casa do Sr.Gaia",
-            "Porque":"para trabalhar",
-            "Como":"carro do Eduardo"
+            "name": "chegar",
+            "when":"6h da manhã de sábado",
+            "who": "Eduardo",
+            "where": "Casa do Senhor Gaia",
+            "what": "chegou a casa do Senhor Gaia",
+            "why":"para trabalhar",
+            "how":"carro do Eduardo"
         },
         {
             "_uid":"e12",
-            "nome": "estacionar",
-            "Quando":"6h da manhã de sábado",
-            "Quem": "Eduardo",
-            "Onde": "Telheiro",
-            "Oque": "estacionou",
-            "Porque":"para trabalhar"
+            "name": "estacionar",
+            "when":"6h da manhã de sábado",
+            "who": "Eduardo",
+            "where": "Telheiro",
+            "what": "estacionou",
+            "why":"para trabalhar"
         },
         {
             "_uid":"e13",
-            "nome": "luz do estudio",
-            "Quando":"6h da manhã de sábado",
-            "Quem": "Eduardo",
-            "Onde": "Casa do Sr.Gaia",
-            "Oque": "viu a luz do estudio acesa",
-            "Porque":"o Sr.Gaia estava lá"
+            "name": "luz do estudio",
+            "when":"6h da manhã de sábado",
+            "who": "Eduardo",
+            "where": "Casa do Senhor Gaia",
+            "what": "viu a luz do estudio acesa",
+            "why":"o Senhor Gaia estava lá"
         },
         {
             "_uid":"e14",
-            "nome": "casa do miguel",
-            "Quando":"6h25 da manhã de sábado",
-            "Quem": "Miguel",
-            "Onde": "Casa do Miguel",
-            "Oque": "saiu",
-            "Porque":"para ir falar com o Sr.Gaia",
-            "Como":"no Carro do Miguel"
+            "name": "casa do miguel",
+            "when":"6h25 da manhã de sábado",
+            "who": "Miguel",
+            "where": "Casa do Miguel",
+            "what": "saiu",
+            "why":"para ir falar com o Senhor Gaia",
+            "how":"no Carro do Miguel"
         },
         {
             "_uid":"e15",
-            "nome": "atengido",
-            "Quando":"entre as 6:30 e as 7h da manhã de sábado",
-            "Quem": "Sr.Gaia",
-            "Onde": "Casa do Sr.Gaia",
-            "Oque": "foi atengido na cabeça",
-            "Como":"com um pé-de-cabra"
+            "name": "atengido",
+            "when":"entre as 6:30 e as 7h da manhã de sábado",
+            "who": "Senhor Gaia",
+            "where": "Casa do Senhor Gaia",
+            "what": "foi atengido na cabeça",
+            "how":"com um pé-de-cabra"
         },
         {
             "_uid":"e16",
-            "nome": "queda",
-            "Quando":"entre as 6:30 e as 7h da manhã de sábado",
-            "Quem": "Sr.Gaia",
-            "Onde": "Escadas nas traseiras da Casa do Sr.Gaia",
-            "Oque": "caiu",
-            "Porque":"doi atengido na cabeça"
+            "name": "queda",
+            "when":"entre as 6:30 e as 7h da manhã de sábado",
+            "who": "Senhor Gaia",
+            "where": "Escadas nas traseiras da Casa do Senhor Gaia",
+            "what": "caiu",
+            "why":"doi atengido na cabeça"
         },
         {
             "_uid":"e17",
-            "nome": "beber café",
-            "Quando":"6h40 da manhã de sábado",
-            "Quem": "Miguel",
-            "Onde": "Café",
-            "Oque": "bebeu café",
-            "Porque":"Para pensar"
+            "name": "beber café",
+            "when":"6h40 da manhã de sábado",
+            "who": "Miguel",
+            "where": "Café",
+            "what": "bebeu café",
+            "why":"Para pensar"
         },
         {
             "_uid":"e18",
-            "nome": "barulhos na rua",
-            "Quando":"6h40 da manhã de sábado",
-            "Quem": "Maria",
-            "Onde": "Casa do Sr.Gaia",
-            "Oque": "ouviu barulhos na rua"
+            "name": "barulhos na rua",
+            "when":"6h40 da manhã de sábado",
+            "who": "Maria",
+            "where": "Casa do Senhor Gaia",
+            "what": "ouviu barulhos na rua"
         },
         {
             "_uid":"e19",
-            "nome": "carro a sair",
-            "Quando":"6h40 da manhã de sábado",
-            "Quem": "Maria",
-            "Onde": "Casa do Sr.Gaia",
-            "Oque": "ouviu um carro a sair"
+            "name": "carro a sair",
+            "when":"6h40 da manhã de sábado",
+            "who": "Maria",
+            "where": "Casa do Senhor Gaia",
+            "what": "ouviu um carro a sair"
         },
         {
             "_uid":"e20",
-            "nome": "carro",
-            "Quando":"6h40 da manhã de sábado",
-            "Quem": "Maria",
-            "Onde": "telheiro",
-            "Oque": "viu o carro do Sr.Gaia",
-            "Como":"pela janela do escritorio"
+            "name": "carro",
+            "when":"6h40 da manhã de sábado",
+            "who": "Maria",
+            "where": "telheiro",
+            "what": "viu o carro do Senhor Gaia",
+            "how":"pela janela do escritorio"
         },
         {
             "_uid":"e21",
-            "nome": "Café",
-            "Quando":"6h50 da manhã de sábado",
-            "Quem": "Miguel",
-            "Onde": "Café",
-            "Oque": "saiu do café",
-            "Porque":"acabou de beber café",
-            "Como":"de carro"
+            "name": "Café",
+            "when":"6h50 da manhã de sábado",
+            "who": "Miguel",
+            "where": "Café",
+            "what": "saiu do café",
+            "why":"acabou de beber café",
+            "how":"de carro"
         },
         {
             "_uid":"e22",
-            "nome": "golf",
-            "Quando":"7h da manhã de sábado",
-            "Quem": "Miguel",
-            "Onde": "Clube LX",
-            "Oque": "chegou ao campo de golf",
-            "Porque": "tinha combinado com os amigos",
-            "Como":"no carro do Miguel"
+            "name": "golf",
+            "when":"7h da manhã de sábado",
+            "who": "Miguel",
+            "where": "Clube LX",
+            "what": "chegou ao campo de golf",
+            "why": "tinha combinado com os amigos",
+            "how":"no carro do Miguel"
         },
         {
             "_uid":"e23",
-            "nome": "carro barulhento",
-            "Quando":"7h da manhã de sábado",
-            "Quem": "Eduardo",
-            "Onde": "Casa do Sr.Gaia",
-            "Oque": "ouviu o carro do Bruno",
-            "Porque":"o carro do Bruno é barulhento"
+            "name": "carro barulhento",
+            "when":"7h da manhã de sábado",
+            "who": "Eduardo",
+            "where": "Casa do Senhor Gaia",
+            "what": "ouviu o carro do Bruno",
+            "why":"o carro do Bruno é barulhento"
         },
         {
             "_uid":"e24",
-            "nome": "carteira",
-            "Quando":"7h da manhã de sábado",
-            "Onde": "Loja Gaia",
-            "Quem": "O culpado no seu carro",
-            "Oque": "carteira do Sr.Gaia"
+            "name": "carteira",
+            "when":"7h da manhã de sábado",
+            "where": "Loja Gaia",
+            "who": "O culpado no seu carro",
+            "what": "carteira do Senhor Gaia"
         },
         {
             "_uid":"e25",
-            "nome": "encontar o corpo",
-            "Quando":"8h da manhã de sábado",
-            "Quem": "Bruno",
-            "Onde": "Casa do Sr.Gaia",
-            "Oque": "encontrou o corpo",
-            "Porque":"foi cortar a relva"
+            "name": "encontar o corpo",
+            "when":"8h da manhã de sábado",
+            "who": "Bruno",
+            "where": "Casa do Senhor Gaia",
+            "what": "encontrou o corpo",
+            "why":"foi cortar a relva"
         },
         {
             "_uid":"e26",
-            "nome": "fugir da cena do crime",
-            "Quando":"8h da manhã de sábado",
-            "Quem": "Bruno",
-            "Onde": "Casa do Sr.Gaia",
-            "Oque": "fugiu da cena do crime",
-            "Porque": "achou que seria o melhor para ele",
-            "Como": "no Carro do Bruno"
+            "name": "fugir da cena do crime",
+            "when":"8h da manhã de sábado",
+            "who": "Bruno",
+            "where": "Casa do Senhor Gaia",
+            "what": "fugiu da cena do crime",
+            "why": "achou que seria o melhor para ele",
+            "how": "no Carro do Bruno"
         },
         {
             "_uid":"e27",
-            "nome": "encontrar o corpo",
-            "Quando":"10h30 na manhã de sábado",
-            "Quem": "Eduardo",
-            "Onde": "Casa do Sr.Gaia",
-            "Oque": "encontrou o corpo",
-            "Porque": "foi ao seu carro buscar o pé-de-cabra ao seu carro"
+            "name": "encontrar o corpo",
+            "when":"10h30 na manhã de sábado",
+            "who": "Eduardo",
+            "where": "Casa do Senhor Gaia",
+            "what": "encontrou o corpo",
+            "why": "foi ao seu carro buscar o pé-de-cabra ao seu carro"
         },
         {
             "_uid":"e28",
-            "nome": "acordar",
-            "Quando":"entre as 9h e 9h15 da manhã de sábado",
-            "Quem": "Maria",
-            "Onde": "Casa do Sr.Gaia",
-            "Oque": "Acordou",
-            "Porque": "dorme até tarde ao fim de semana"
+            "name": "acordar",
+            "when":"entre as 9h e 9h15 da manhã de sábado",
+            "who": "Maria",
+            "where": "Casa do Senhor Gaia",
+            "what": "Acordou",
+            "why": "dorme até tarde ao fim de semana"
         },
         {
             "_uid":"e29",
-            "nome": "fazer aerobica",
-            "Quando":"entre as 9h30 e 10h da manha de sábado",
-            "Quem": "Maria",
-            "Onde": "Casa do Sr.Gaia",
-            "Oque": "fez aerobica",
-            "Porque": "passa um programa na tv",
-            "Como": "atravez do progama da tv"
+            "name": "fazer aerobica",
+            "when":"entre as 9h30 e 10h da manha de sábado",
+            "who": "Maria",
+            "where": "Casa do Senhor Gaia",
+            "what": "fez aerobica",
+            "why": "passa um programa na tv",
+            "how": "atravez do progama da tv"
         },
         {
             "_uid":"e30",
-            "nome": "jogo de futebol",
-            "Quando":"tarde de sábado",
-            "Quem": "Bruno",
-            "Oque": "tinha um jogo de futebol"
+            "name": "jogo de futebol",
+            "when":"tarde de sábado",
+            "who": "Bruno",
+            "what": "tinha um jogo de futebol"
         },
         {
             "_uid":"e31",
-            "nome": "visitar",
-            "Quando":"domingo",
-            "Quem": "Miguel e sua esposa",
-            "Onde": "Casa do Sr.Gaia",
-            "Oque": "foram visitar Maria",
-            "Porque": "morte do Sr.Gaia"
+            "name": "visitar",
+            "when":"domingo",
+            "who": "Miguel e sua esposa",
+            "where": "Casa do Senhor Gaia",
+            "what": "foram visitar Maria",
+            "why": "morte do Senhor Gaia"
         },
         {
             "_uid":"e32",
-            "nome": "mentira",
-            "Quando":"primeira entrevista",
-            "Quem": "Bruno",
-            "Onde": "primeira entrevista",
-            "Oque": "mentiu sobre ter estado na casa do Sr.Gaia na manhã de sábado",
-            "Porque": "acreditou que era o  melhor para si"
+            "name": "mentira",
+            "when":"primeira entrevista",
+            "who": "Bruno",
+            "where": "primeira entrevista",
+            "what": "mentiu sobre ter estado na casa do Senhor Gaia na manhã de sábado",
+            "why": "acreditou que era o  melhor para si"
         },
         {
             "_uid":"e33",
-            "nome": "encontrar",
-            "Quando":"durante a investigação",
-            "Quem": "pé-de-cabra",
-            "Onde": "nos arbustos",
-            "Oque": "foi encontrado"
+            "name": "encontrar",
+            "when":"durante a investigação",
+            "who": "pé-de-cabra",
+            "where": "nos arbustos",
+            "what": "foi encontrado"
         },
         {
             "_uid":"e34",
-            "nome": "encontar",
-            "Quem": "Carteira do Sr.Gaia",
-            "Onde": "nas traseiras da Loja Dias",
-            "Oque": "foi encontrada",
-            "Porque": "alguem deixou lá",
-            "Como": "num carro"
+            "name": "encontar",
+            "who": "Carteira do Senhor Gaia",
+            "where": "nas traseiras da Loja Dias",
+            "what": "foi encontrada",
+            "why": "alguem deixou lá",
+            "how": "num carro"
         },
         {
             "_uid":"e35",
-            "nome": "Marcas de rodas",
-            "Quando":"manhã de sábado",
-            "Quem": "Bruno",
-            "Onde": "Casa do Sr.Gaia",
-            "Oque": "marcas de rodas foram feitas",
-            "Porque": "porque ele foi lá na manhã de sábado",
-            "Como": "Carro do bruno"
+            "name": "Marcas de rodas",
+            "when":"manhã de sábado",
+            "who": "Bruno",
+            "where": "Casa do Senhor Gaia",
+            "what": "marcas de rodas foram feitas",
+            "why": "why ele foi lá na manhã de sábado",
+            "how": "Carro do bruno"
         },
         {
             "_uid":"e36",
-            "nome": "trancar ferramentas",
-            "Quando":"habitualmente",
-            "Quem": "Eduardo",
-            "Oque": "tranca as suas ferramentas"
+            "name": "trancar ferramentas",
+            "when":"habitualmente",
+            "who": "Eduardo",
+            "what": "tranca as suas ferramentas"
         },
         {
             "_uid":"e37",
-            "nome": "Despedir-se",
-            "Quem": "Sara",
-            "Onde": "AutoGaia",
-            "Oque": "despediu-se do negocio do Sr.Gaia"
+            "name": "Despedir-se",
+            "who": "Sara",
+            "where": "AutoGaia",
+            "what": "despediu-se do negocio do Senhor Gaia"
         },
         {
             "_uid":"e38",
-            "nome": "Trabalhar no celeiro",
-            "Quando":"manhã de sábado",
-            "Quem": "Eduardo",
-            "Onde": "Casa do Sr.Gaia",
-            "Oque": "Eduardo trabalhou no celeirio",
-            "Porque": "é o faz-tudo"
+            "name": "Trabalhar no celeiro",
+            "when":"manhã de sábado",
+            "who": "Eduardo",
+            "where": "Casa do Senhor Gaia",
+            "what": "Eduardo trabalhou no celeirio",
+            "why": "é o faz-tudo"
         },
         {
             "_uid":"e39",
-            "nome": "carteira encontrada",
-            "Quem": "Duarte Dias",
-            "Onde": "Loja Dias",
-            "Oque": "carteira do Sr.Gaia",
-            "Porque": "foi largada por um carro"
+            "name": "carteira encontrada",
+            "who": "Duarte Dias",
+            "where": "Loja Dias",
+            "what": "carteira do Senhor Gaia",
+            "why": "foi largada por um carro"
         },
         {
-            "_uid":"e38",
-            "nome": "crime",
-            "Quando":"manhã de sábado",
-            "Onde": "Casa do Sr.Gaia",
-            "Oque": "O Sr.Gaia foi assassinado"
+            "_uid":"e40",
+            "name": "crime" 
         }
 
       ],
-      "Facto":[
+      "Fact":[
         {
             "_uid":"f1",
-            "nome": "ES gravado" 
+            "name": "ES gravado" 
         },
         {
             "_uid":"f2",
-            "nome": "Impressões digitais"
+            "name": "Impressões digitais"
         },
         {
             "_uid":"f3",
-            "nome": "Problemas com Dinheiro e jogo"
+            "name": "Problemas com Dinheiro e jogo"
         },
         {
             "_uid":"f4",
-            "nome": "Sr.Gaia saia de casa sempre às 6h30"
+            "name": "Senhor Gaia saia de casa sempre às 6h30"
         },
         {
             "_uid":"f5",
-            "nome": "sem dinheiro"
+            "name": "sem dinheiro"
         },
         {
             "_uid":"f6",
-            "nome": "Rota para o campo golf"
+            "name": "Rota para o campo golf"
         }
       ],
-      "Objeto":[
+      "Object":[
         {
             "_uid": "o1",
-            "nome": "Pé-de-cabra"
+            "name": "Pé-de-cabra"
         },
         {
             "_uid": "o2",
-            "nome": "Carteira"
+            "name": "Carteira"
         },
         {
             "_uid": "o3",
-            "nome": "Carro do culpado"
+            "name": "Carro do culpado"
         },
         {
             "_uid": "o4",
-            "nome": "Carro do Eduardo"
+            "name": "Carro do Eduardo"
         },
         {
             "_uid": "o5",
-            "nome": "Carro do Miguel"
+            "name": "Carro do Miguel"
         },
         {
             "_uid": "o6",
-            "nome": "Carro do Sr.Gaia"
+            "name": "Carro do Senhor Gaia"
         },
         {
             "_uid": "o7",
-            "nome": "Carro do Bruno"
+            "name": "Carro do Bruno"
         }
       ]
     },
     "relationships":{
-        "SUSPEITO":[
+        "SUSPECT":[
             {
               "_from_uid": "p3",
               "_to_uid": "e1"
@@ -518,7 +519,7 @@
                 "_to_uid": "e1"
             }
         ],
-        "DONO":[
+        "OWNER":[
             {
                 "_from_uid": "p1",
                 "_to_uid": "n1"
@@ -564,13 +565,13 @@
                 "_to_uid": "o7"
             }
         ],
-        "CASADO_COM":[
+        "MARRIED_TO":[
             {
                 "_from_uid": "p1",
                 "_to_uid": "p2"
             }
         ],
-        "TRABALHA_PARA":[
+        "WORKS_FOR":[
             {
                 "_from_uid": "p3",
                 "_to_uid": "p1"
@@ -578,27 +579,25 @@
             {
                 "_from_uid": "p4",
                 "_to_uid": "p1"
-            }
-        ],
-        "TRABALHA":[
+            },
             {
                 "_from_uid": "p6",
                 "_to_uid": "n1"
             }
         ],
-        "FORNECEDOR":[
+        "BUSINESS_ASSOCIATE":[
             {
                 "_from_uid": "p5",
                 "_to_uid": "p1"
             }
         ],
-        "FILHA":[
+        "CHILD":[
             {
-                "_from_uid": "p8",
-                "_to_uid": "p3"
+                "_from_uid": "p3",
+                "_to_uid": "p8"
             }
         ], 
-        "VITIMA":[
+        "VICTIM":[
             {
               "_from_uid": "p1",
               "_to_uid": "e1"
@@ -608,7 +607,7 @@
                 "_to_uid": "e16"
             }
         ],
-        "LOCAL":[
+        "AT":[
             {
                 "_from_uid": "e1",
                 "_to_uid": "s1"
@@ -726,19 +725,19 @@
                 "_to_uid": "n3"
             }
         ],
-        "ARMA_DO_CRIME":[
+        "CRIME_WEAPON":[
             {
                 "_from_uid": "e1",
                 "_to_uid": "o1"
             }
         ],
-        "ATO_CRIMINOSO":[
+        "CRIMINAL_ACT":[
             {
                 "_from_uid": "e1",
                 "_to_uid": "e15"
             }
         ],
-        "CAUSA":[
+        "CAUSE":[
             {
                 "_from_uid": "e1",
                 "_to_uid": "e16"
@@ -752,7 +751,7 @@
                 "_to_uid": "e3"
             }
         ],
-        "ENVIOU":[
+        "SENT":[
             {
                 "_from_uid": "p5",
                 "_to_uid": "e2"
@@ -766,7 +765,7 @@
                 "_to_uid": "e4"
             }
         ],
-        "RECEBEU":[
+        "RECEIVED":[
             {
                 "_from_uid": "p1",
                 "_to_uid": "e2"
@@ -780,7 +779,7 @@
                 "_to_uid": "e4"
             }
         ],
-        "TEM":[
+        "HAS":[
             {
                 "_from_uid": "p5",
                 "_to_uid": "e3"
@@ -806,7 +805,7 @@
                 "_to_uid": "f3"
             }
         ],
-        "FEZ":[
+        "DID":[
             {
                 "_from_uid": "p5",
                 "_to_uid": "e5"
@@ -824,37 +823,37 @@
                 "_to_uid": "f6"
             }
         ],
-        "RECUSOU":[
+        "REFUSED":[
             {
                 "_from_uid": "p1",
                 "_to_uid": "e5"
             }
         ],
-        "TENTATIVA_RESOLVER":[
+        "ATTEMPT_TO_SOLVE":[
             {
                 "_from_uid": "e3",
                 "_to_uid": "e5"
             }
         ],
-        "FEZ_PEDIDO":[
+        "MADE_REQUEST":[
             {
                 "_from_uid": "p4",
                 "_to_uid": "e6"
             }
         ],
-        "RECEBEU_PEDIDO":[
+        "RECEIVED_REQUEST":[
             {
                 "_from_uid": "p1",
                 "_to_uid": "e6"
             }
         ],
-        "DEIXOU":[
+        "LEAVE":[
             {
                 "_from_uid": "p3",
                 "_to_uid": "e7"
             }
         ],
-        "FICOU":[
+        "IT_WAS":[
             {
                 "_from_uid": "o1",
                 "_to_uid": "e7"
@@ -865,13 +864,13 @@
             }
         
         ],
-        "NÃO":[
+        "DID_NOT":[
             {
                 "_from_uid": "p4",
                 "_to_uid": "e9"
             }
         ],
-        "ENTRE":[
+        "BETWEEN":[
             {
                 "_from_uid": "e10",
                 "_to_uid": "p1"
@@ -881,7 +880,7 @@
                 "_to_uid": "p5"
             }
         ],
-        "CHEGOU":[
+        "ARRIVED":[
             {
                 "_from_uid": "p3",
                 "_to_uid": "e11"
@@ -891,7 +890,7 @@
                 "_to_uid": "e22"
             }
         ],
-        "USOU":[
+        "USED":[
             {
                 "_from_uid": "e11",
                 "_to_uid": "o4"
@@ -920,24 +919,14 @@
                 "_from_uid": "e35",
                 "_to_uid": "o7"
             }
-        ],
-        "PARA":[
-            {
-                "_from_uid": "e11",
-                "_to_uid": "e34"
-            },
-            {
-                "_from_uid": "e12",
-                "_to_uid": "e34"
-            }
-        ],       
-        "ESTACIONOU":[
+        ],   
+        "PARKED":[
             {
                 "_from_uid": "p3",
                 "_to_uid": "e12"
             }
         ],
-        "VIU":[
+        "SAW":[
             {
                 "_from_uid": "p3",
                 "_to_uid": "e13"
@@ -947,7 +936,7 @@
                 "_to_uid": "e20"
             }
         ],
-        "SAIU":[
+        "LEFT":[
             {
                 "_from_uid": "p5",
                 "_to_uid": "e14"
@@ -957,7 +946,7 @@
                 "_to_uid": "e21"
             }
         ],
-        "FOI":[
+        "WAS":[
             {
                 "_from_uid": "p1",
                 "_to_uid": "e15"
@@ -967,7 +956,7 @@
                 "_to_uid": "e17"
             }
         ],
-        "POR":[
+        "BY":[
             {
                 "_from_uid": "e15",
                 "_to_uid": "o1"
@@ -977,7 +966,7 @@
                 "_to_uid": "p7"
             }
         ],
-        "OUVIU":[
+        "HEARD":[
             {
                 "_from_uid": "p2",
                 "_to_uid": "e18"
@@ -991,13 +980,13 @@
                 "_to_uid": "e23"
             }
         ],
-        "LARGOU":[
+        "DROPPED":[
             {
                 "_from_uid": "o3",
                 "_to_uid": "e24"
             }
         ],
-        "É":[
+        "IS":[
             {
                 "_from_uid": "e24",
                 "_to_uid": "o2"
@@ -1005,9 +994,17 @@
             {
                 "_from_uid": "e39",
                 "_to_uid": "o2"
+            },
+            {
+                "_from_uid": "p9",
+                "_to_uid": "p1"
+            },
+            {
+                "_from_uid": "e40",
+                "_to_uid": "e1"
             }
         ],
-        "ENCONTROU":[
+        "FOUND":[
             {
                 "_from_uid": "p4",
                 "_to_uid": "e25"
@@ -1015,49 +1012,49 @@
             {
                 "_from_uid": "p3",
                 "_to_uid": "e27"
+            },
+            {
+                "_from_uid": "o2",
+                "_to_uid": "f5"
             }
         ],
-        "PERTENCE":[
-            {
-                "_from_uid": "e25",
-                "_to_uid": "p1"
-            },
+        "BELONG":[
             {
                 "_from_uid": "f2",
                 "_to_uid": "p4"
             }
         ],
-        "FUGIU":[
+        "FLEE":[
             {
                 "_from_uid": "p4",
                 "_to_uid": "e26"
             }
         ],
-        "ACORDOU":[
+        "WOKE_UP":[
             {
                 "_from_uid": "p2",
                 "_to_uid": "e28"
             }
         ],
-        "VISITOU":[
+        "VISITED":[
             {
                 "_from_uid": "p5",
                 "_to_uid": "e31"
             }
         ],
-        "RECEBEU_VISITA":[
+        "RECEIVED_VISIT":[
             {
                 "_from_uid": "e31",
                 "_to_uid": "p2"
             }
         ],
-        "MENTIU":[
+        "LIED":[
             {
                 "_from_uid": "p4",
                 "_to_uid": "e32"
             }
         ],
-        "ENCONTRADO":[
+        "WAS_FOUND":[
             {
                 "_from_uid": "o1",
                 "_to_uid": "e33"
@@ -1067,25 +1064,25 @@
                 "_to_uid": "e34"
             }
         ],
-        "TRANCA":[
+        "LOCKS":[
             {
                 "_from_uid": "p3",
                 "_to_uid": "e36"
             }
         ],
-        "DESPEDIUSE":[
+        "QUIT":[
             {
                 "_from_uid": "p8",
                 "_to_uid": "e37"
             }
         ],
-        "TRABALHOU":[
+        "WORKED":[
             {
                 "_from_uid": "p3",
                 "_to_uid": "e38"
             }
         ],
-        "ANTES":[
+        "BEFORE":[
             {
                 "_from_uid": "e2",
                 "_to_uid": "e4"
@@ -1311,7 +1308,7 @@
                 "_to_uid": "e31"
             }
         ],
-        "DURANTE":[
+        "DURING":[
             {
                 "_from_uid": "e2",
                 "_to_uid": "e3"
@@ -1957,19 +1954,19 @@
                 "_to_uid": "e26"
             }
         ],
-        "ENCONTRAR":[
+        "FIND":[
             {
                 "_from_uid": "e39",
                 "_to_uid": "e34"
             }
         ],
-        "NÃO_TINHA":[
+        "DID_NOT_HAVE":[
             {
                 "_from_uid": "p1",
                 "_to_uid": "o2"
             }
         ],
-        "TINHA":[
+        "HAD":[
             {
                 "_from_uid": "o1",
                 "_to_uid": "f1"
@@ -1979,19 +1976,13 @@
                 "_to_uid": "f2"
             }
         ],
-        "SABE_QUE":[
+        "KNOWS_THAT":[
             {
                 "_from_uid": "p3",
                 "_to_uid": "f4"
             }
         ],
-        "ENCONTRADA":[
-            {
-                "_from_uid": "o2",
-                "_to_uid": "f5"
-            }
-        ],
-        "PROXIMA":[
+        "NEAR":[
             {
                 "_from_uid": "f6",
                 "_to_uid": "n3"

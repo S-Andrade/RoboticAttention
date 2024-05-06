@@ -31,24 +31,37 @@ graph = Neo4jGraph(
 
 #print(graph.schema)~
 
-CYPHER_GENERATION_TEMPLATE = """Task:Generate Cypher statement to query a graph database.
+CYPHER_GENERATION_TEMPLATE = """
+Task:Generate Cypher statement to query a graph database.
 Instructions:
 Use only the provided relationship types and properties in the schema.
 Do not use any other relationship types or properties that are not provided.
-Do not limit the number of returns results unless instructed otherwise.
-
 Schema:
 {schema}
 
+Note: Do not include any explanations or apologies in your responses.
+Do not respond to any questions that might ask anything else than for you to construct a Cypher statement.
+Do not include any text except the generated Cypher statement.
+
 The question is:
 {question}"""
+
 CYPHER_GENERATION_PROMPT = PromptTemplate(
     input_variables=["schema", "question"], template=CYPHER_GENERATION_TEMPLATE
 )
 
-chain = GraphCypherQAChain.from_llm(llm, graph=graph, return_direct=True, verbose=True, top_k=32, cypher_prompt=CYPHER_GENERATION_PROMPT)
 
-resposta = chain.run("""Quem estava na casa do Sr.Gaia durante o crime?""")
-print(resposta)
+chain_language_example = GraphCypherQAChain.from_llm(
+    ChatOpenAI(temperature=0), graph=graph, verbose=True
+)
+
+escreve = open("respostas.txt", "a", encoding="utf-8")
+
+with open("perguntas.txt", encoding="utf-8") as file:
+    for line in file:
+        escreve.write(line)
+        resposta = chain_language_example.run(line)
+        print(resposta)
+        escreve.write(">" + resposta + "\n")
 
 
